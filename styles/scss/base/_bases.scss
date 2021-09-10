@@ -15,3 +15,7 @@ body {
 .hidden {
 	display: none;
 }
+
+.unselect {
+	user-select: none;
+}
