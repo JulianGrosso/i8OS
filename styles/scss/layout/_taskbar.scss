@@ -1,0 +1,49 @@
+.taskbar {
+	background: rgba(0, 0, 0, 0.75);
+	border-radius: 40px 40px 0px 0px;
+
+	width: 100%;
+	height: 4rem;
+
+	position: absolute;
+	bottom: 0%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.desktop-button {
+	margin-left: 1.4rem;
+	height: 2.5rem;
+	width: auto;
+}
+
+.notification-area {
+	background: rgba(196, 196, 196, 0.2);
+	border-radius: 50px;
+
+	width: 14rem;
+	height: 2.5rem;
+
+	margin-right: 1.4rem;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.wifi-taskbar,
+.volume-taskbar,
+.battery-taskbar {
+	height: 1.2rem;
+	width: auto;
+}
+
+.clock-taskbar {
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin-top: 0.1rem;
+}

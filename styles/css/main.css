@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.unselect {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: black;
+  background-image: url("../../assets/img/W-02.jpg");
+  background-position: top center;
+  background-size: 100% auto;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.taskbar {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 40px 40px 0px 0px;
+  width: 100%;
+  height: 4rem;
+  position: absolute;
+  bottom: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.desktop-button {
+  margin-left: 1.4rem;
+  height: 2.5rem;
+  width: auto;
+}
+
+.notification-area {
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 50px;
+  width: 14rem;
+  height: 2.5rem;
+  margin-right: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wifi-taskbar,
+.volume-taskbar,
+.battery-taskbar {
+  height: 1.2rem;
+  width: auto;
+}
+
+.clock-taskbar {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 0.1rem;
+}
+/*# sourceMappingURL=main.css.map */
