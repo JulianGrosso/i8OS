@@ -1,4 +1,8 @@
 //
+// DOM elements - Body
+
+const $body = document.querySelector("#body");
+
 // DOM elements - Desktop
 
 const $desktopAll = document.querySelector("#desktopAll");
@@ -10,5 +14,5 @@ const $notifArea = document.querySelector("#notifArea");
 
 // DOM elements - Notification Menu
 
-const $notifMenu = document.querySelector("#notifMenu")
+const $notifMenu = document.querySelector("#notifMenu");
 const $wallpaperBtn = document.querySelector("#wallpaperBtn");

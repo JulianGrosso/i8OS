@@ -17,9 +17,6 @@ body {
   width: 100vw;
   overflow: hidden;
   background-color: black;
-  background-image: url("../../assets/img/W-02.jpg");
-  background-position: top center;
-  background-size: 100% auto;
   font-family: "Roboto", sans-serif;
   color: white;
 }
@@ -39,6 +36,24 @@ body {
      -moz-user-select: none !important;
       -ms-user-select: none !important;
           user-select: none !important;
+}
+
+.wallpaper02 {
+  background-image: url("../../assets/img/W-01.jpg");
+  background-position: top center;
+  background-size: auto 100%;
+}
+
+.wallpaper01 {
+  background-image: url("../../assets/img/W-02.jpg");
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+.wallpaper03 {
+  background-image: url("../../assets/img/W-03.jpg");
+  background-position: top center;
+  background-size: 100% auto;
 }
 
 .taskbar {
