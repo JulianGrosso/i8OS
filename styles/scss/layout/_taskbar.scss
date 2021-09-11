@@ -12,9 +12,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+
+	z-index: 20;
 }
 
-.start-button {
+.start-btn {
 	margin-left: 1.4rem;
 	height: 2.5rem;
 	width: auto;

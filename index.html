@@ -12,15 +12,15 @@
 		<title>Infinity 8 OS</title>
 	</head>
 	<body>
-		<main class="work-area" id="workArea"></main>
+		<main class="desktop-all" id="desktopAll"></main>
 		<section class="taskbar unselect" id="taskbar">
 			<img
-				class="start-button"
-				id="startButton"
+				class="start-btn"
+				id="startBtn"
 				src="./assets/icons/desktop_button.png"
 				alt="Desktop button"
 			/>
-			<div class="notification-area" id="notificationArea">
+			<div class="notification-area" id="notifArea">
 				<img
 					class="wifi-taskbar"
 					src="./assets/icons/wifi-full.png"
@@ -39,7 +39,7 @@
 				<p class="clock-taskbar">18:08</p>
 			</div>
 		</section>
-		<section class="notification-menu unselect" id="notificationMenu">
+		<section class="notification-menu unselect hidden" id="notifMenu">
 			<div class="notif-menu-info">
 				<p class="notif-menu-text">Infinity 8 OS</p>
 				<img
@@ -69,7 +69,7 @@
 					/>
 					<p class="selectors-text">Infinity Network 5.8 GHz</p>
 				</div>
-				<div class="wallpaper-selector">
+				<div class="wallpaper-selector" id="wallpaperBtn">
 					<img
 						class="selectors-icon"
 						src="./assets/icons/wallpaper.png"
@@ -94,5 +94,7 @@
 				/>
 			</div>
 		</section>
+
+		<script src="./js/dom.js"></script>
 	</body>
 </html>
