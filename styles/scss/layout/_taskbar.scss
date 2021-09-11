@@ -42,10 +42,9 @@
 	justify-content: space-evenly;
 	align-items: center;
 
-	transition: 100ms ease-in-out;
+	transition: 200ms ease-in-out;
 	&:hover {
-		width: 14.1rem;
-		height: 2.6rem;
+		background: $bg-notification-area-hover;
 	}
 }
 

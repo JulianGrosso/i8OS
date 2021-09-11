@@ -10,4 +10,5 @@ const $notifArea = document.querySelector("#notifArea");
 
 // DOM elements - Notification Menu
 
+const $notifMenu = document.querySelector("#notifMenu")
 const $wallpaperBtn = document.querySelector("#wallpaperBtn");
