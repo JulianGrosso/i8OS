@@ -36,7 +36,7 @@
 					src="./assets/icons/battery-charging.png"
 					alt="Battery charging"
 				/>
-				<p class="clock-taskbar">18:08</p>
+				<div class="clock-taskbar" id="clockTaskbar" onload="showTime()"></div>
 			</div>
 		</section>
 		<section class="notification-menu unselect hidden" id="notifMenu">
@@ -59,7 +59,7 @@
 					alt="Configuration"
 				/>
 			</div>
-			<p class="notif-menu-clock">08:08</p>
+			<div class="notif-menu-clock" id="clockNotifMenu" onload="showTime()"></div>
 			<div class="notif-menu-selectors">
 				<div class="wifi-network">
 					<img
@@ -96,6 +96,7 @@
 		</section>
 
 		<script src="./js/dom.js"></script>
+		<script src="./js/clock.js"></script>
 		<script src="./js/taskbar.js"></script>
 		<script src="./js/desktop.js"></script>
 	</body>
