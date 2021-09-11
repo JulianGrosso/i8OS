@@ -93,6 +93,9 @@
 	height: 58%;
 	width: auto;
 	padding: 0.4rem;
+	border-radius: 10px;
+
+	transition: 100ms ease-in-out;
 	&:hover {
 		height: 58%;
 		width: auto;
