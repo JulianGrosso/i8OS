@@ -13,9 +13,9 @@ body {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .unselect {
-	user-select: none;
+	user-select: none !important;
 }

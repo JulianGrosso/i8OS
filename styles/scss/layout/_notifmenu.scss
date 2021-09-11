@@ -1,0 +1,192 @@
+.notification-menu {
+	background: $bg-Sys-BlackTransp;
+	border-radius: 30px;
+
+	height: 26rem;
+	width: 21rem;
+
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+
+	position: absolute;
+	right: 1.4rem;
+	bottom: 5rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/* ----------------------------------------------------------------- */
+
+.notif-menu-info {
+	width: 90%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.notif-menu-text {
+	font-size: 1.2rem;
+	font-weight: 500;
+
+	padding-right: 1.2rem;
+}
+
+.notif-menu-wifi,
+.notif-menu-battery {
+	height: 1.2rem;
+	width: auto;
+}
+
+.notif-menu-battery-level {
+	font-size: 1.2rem;
+}
+
+.notif-menu-config {
+	height: 95%;
+	width: auto;
+}
+
+/* ----------------------------------------------------------------- */
+
+.notif-menu-clock {
+	font-size: 6.5rem;
+	font-weight: 200;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ----------------------------------------------------------------- */
+
+.notif-menu-selectors {
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.wifi-network,
+.wallpaper-selector {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-left: 1rem;
+	margin-right: 1rem;
+
+	text-align: center;
+
+	width: 50%;
+	height: 100%;
+}
+
+.selectors-icon {
+	height: 58%;
+	width: auto;
+}
+
+.selectors-text {
+	margin-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------------- */
+
+.notif-menu-audio {
+	width: 88%;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.audio-volume-selector {
+	background: none;
+	width: 80%;
+}
+
+//
+/* -------- Input Range Format -------- */
+//
+
+input[type="range"] {
+	display: block;
+}
+
+input[type="range"]:focus {
+	outline: none;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+	background-color: $white;
+	width: 12px;
+	height: 12px;
+	/* border: 3px solid #333; */
+	border: none;
+	border-radius: 50%;
+	margin-top: -5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+	background-color: $white;
+	width: 12px;
+	height: 12px;
+	/* border: 3px solid #333; */
+	border: none;
+	border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+	background-color: $white;
+	width: 12px;
+	height: 12px;
+	/* border: 3px solid #333; */
+	border: none;
+	border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+	background-color: $white;
+	height: 2px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+	outline: none;
+}
+
+input[type="range"]::-moz-range-track {
+	background-color: $white;
+	height: 2px;
+}
+
+input[type="range"]::-ms-track {
+	background-color: $white;
+	height: 2px;
+}
+
+.input-disabled::-webkit-slider-thumb {
+	background-color: $white !important;
+}
+
+.input-disabled::-moz-range-thumb {
+	background-color: $white !important;
+}
+
+.input-disabled::-ms-thumb {
+	background-color: $white !important;
+}
+
+/* ----------------------------------------------------------------- */

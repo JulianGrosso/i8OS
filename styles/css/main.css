@@ -25,14 +25,14 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .unselect {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
 }
 
 .taskbar {
@@ -110,4 +110,228 @@ body {
   font-weight: normal;
   margin-top: 0.1rem;
 }
+
+.notification-menu {
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  height: 26rem;
+  width: 21rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  position: absolute;
+  right: 1.4rem;
+  bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ----------------------------------------------------------------- */
+.notif-menu-info {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notif-menu-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-right: 1.2rem;
+}
+
+.notif-menu-wifi,
+.notif-menu-battery {
+  height: 1.2rem;
+  width: auto;
+}
+
+.notif-menu-battery-level {
+  font-size: 1.2rem;
+}
+
+.notif-menu-config {
+  height: 95%;
+  width: auto;
+}
+
+/* ----------------------------------------------------------------- */
+.notif-menu-clock {
+  font-size: 6.5rem;
+  font-weight: 200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* ----------------------------------------------------------------- */
+.notif-menu-selectors {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.wifi-network,
+.wallpaper-selector {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+}
+
+.selectors-icon {
+  height: 58%;
+  width: auto;
+}
+
+.selectors-text {
+  margin-top: 0.5rem;
+}
+
+/* ----------------------------------------------------------------- */
+.notif-menu-audio {
+  width: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.audio-volume-selector {
+  background: none;
+  width: 80%;
+}
+
+/* -------- Input Range Format -------- */
+input[type="range"] {
+  display: block;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  /* border: 3px solid #333; */
+  border: none;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  /* border: 3px solid #333; */
+  border: none;
+  border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+  background-color: white;
+  width: 12px;
+  height: 12px;
+  /* border: 3px solid #333; */
+  border: none;
+  border-radius: 50%;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: white;
+  height: 2px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  outline: none;
+}
+
+input[type="range"]::-moz-range-track {
+  background-color: white;
+  height: 2px;
+}
+
+input[type="range"]::-ms-track {
+  background-color: white;
+  height: 2px;
+}
+
+.input-disabled::-webkit-slider-thumb {
+  background-color: white !important;
+}
+
+.input-disabled::-moz-range-thumb {
+  background-color: white !important;
+}
+
+.input-disabled::-ms-thumb {
+  background-color: white !important;
+}
+
+/* ----------------------------------------------------------------- */
 /*# sourceMappingURL=main.css.map */
