@@ -16,3 +16,13 @@ const $notifArea = document.querySelector("#notifArea");
 
 const $notifMenu = document.querySelector("#notifMenu");
 const $wallpaperBtn = document.querySelector("#wallpaperBtn");
+
+// DOM elements - App Icon
+
+const $appIcon01 = document.querySelector("#appIcon01");
+
+// DOM elements - Windows
+
+const $appWindow = document.querySelector("#appWindow");
+const $appContainer = document.querySelector("#appContainer");
+const $closeWindow = document.querySelector("#closeWindow");

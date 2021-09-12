@@ -371,7 +371,7 @@ input[type="range"]::-ms-track {
 .app-desktop-icon {
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -409,8 +409,8 @@ input[type="range"]::-ms-track {
 }
 
 .app-desktop-icon-logo:hover {
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
 }
 
 .app-desktop-icon-img {
@@ -425,5 +425,53 @@ input[type="range"]::-ms-track {
   text-align: center;
   color: white;
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+}
+
+.app-windows {
+  width: 40rem;
+  height: 35rem;
+  position: absolute;
+  top: 8%;
+  left: 28%;
+  background-color: #1e1e1e;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.w-bar {
+  width: 100%;
+  height: 2.2rem;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.w-control {
+  height: 100%;
+}
+
+.w-controllers {
+  margin-top: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.app-container,
+.app-deploy {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

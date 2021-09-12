@@ -1,0 +1,42 @@
+.app-windows {
+	width: 40rem;
+	height: 35rem;
+
+	position: absolute;
+	top: 8%;
+	left: 28%;
+
+	background-color: $bg-window-th-black;
+
+	z-index: 3;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.w-bar {
+	width: 100%;
+	height: 2.2rem;
+
+	background-color: $bg-w-bar-th-black;
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.w-control {
+	height: 100%;
+}
+
+.w-controllers {
+	margin-top: 0.8rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.app-container,
+.app-deploy {
+	height: 100%;
+	width: 100%;
+}

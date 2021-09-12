@@ -23,6 +23,31 @@
 				</div>
 				<p class="app-desktop-icon-name">App</p>
 			</div>
+			<div class="app-windows hidden" id="appWindow">
+				<div class="w-bar unselect">
+					<div class="w-control">
+						<img
+							id="minimizeWindow"
+							class="w-controllers"
+							src="./assets/icons/window-minimize.png"
+							alt="Minimize window"
+						/>
+						<img
+							id="maximizeWindow"
+							class="w-controllers"
+							src="./assets/icons/window-maximize.png"
+							alt="Maximize window"
+						/>
+						<img
+							id="closeWindow"
+							class="w-controllers"
+							src="./assets/icons/window-close.png"
+							alt="Close window"
+						/>
+					</div>
+				</div>
+				<div class="app-container" id="appContainer"></div>
+			</div>
 		</section>
 		<section class="taskbar unselect" id="taskbar">
 			<img
@@ -115,5 +140,6 @@
 		<script src="./js/taskbar.js"></script>
 		<script src="./js/desktop.js"></script>
 		<script src="./js/notifMenu.js"></script>
+		<script src="./js/appIcon.js"></script>
 	</body>
 </html>
