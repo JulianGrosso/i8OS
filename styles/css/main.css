@@ -57,7 +57,7 @@ body {
 }
 
 .taskbar {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 34px 34px 0px 0px;
   width: 100%;
   height: 3.8rem;
@@ -132,8 +132,19 @@ body {
   margin-top: 0.1rem;
 }
 
+.taskbar-icon {
+  position: absolute;
+  left: 48%;
+}
+
+.app-taskbar-icon {
+  margin-top: 0.6rem;
+  height: 2.8rem;
+  width: auto;
+}
+
 .notification-menu {
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 30px;
   height: 26rem;
   width: 21rem;
@@ -389,8 +400,8 @@ input[type="range"]::-ms-track {
 }
 
 .app-desktop-icon-logo {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   background: white;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
@@ -409,18 +420,18 @@ input[type="range"]::-ms-track {
 }
 
 .app-desktop-icon-logo:hover {
-  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
-          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .app-desktop-icon-img {
-  height: 30%;
+  height: 1.6rem;
   width: auto;
 }
 
 .app-desktop-icon-name {
   margin-top: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-style: normal;
   text-align: center;
   color: white;
@@ -459,14 +470,13 @@ input[type="range"]::-ms-track {
           align-items: center;
 }
 
-.w-control {
-  height: 100%;
+.w-controllers {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
-.w-controllers {
-  margin-top: 0.8rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+.wc-close {
+  padding-right: 1.5rem;
 }
 
 .app-container,

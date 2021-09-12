@@ -25,14 +25,13 @@
 	align-items: center;
 }
 
-.w-control {
-	height: 100%;
+.w-controllers {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
 }
 
-.w-controllers {
-	margin-top: 0.8rem;
-	padding-left: 1rem;
-	padding-right: 1rem;
+.wc-close {
+	padding-right: 1.5rem;
 }
 
 .app-container,

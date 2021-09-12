@@ -11,6 +11,7 @@ const $desktopAll = document.querySelector("#desktopAll");
 
 const $startBtn = document.querySelector("#startBtn");
 const $notifArea = document.querySelector("#notifArea");
+const $appTaskbarIcon = document.querySelector("#appTaskbarIcon")
 
 // DOM elements - Notification Menu
 

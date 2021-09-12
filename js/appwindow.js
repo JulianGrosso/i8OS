@@ -29,5 +29,7 @@ $closeWindow.addEventListener("click", () => {
 	if (windowState === true) {
 		closeApp();
 		windowState = false;
+
+		$appTaskbarIcon.classList.add("hidden");
 	}
 });
