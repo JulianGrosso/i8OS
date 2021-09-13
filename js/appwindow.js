@@ -9,7 +9,11 @@ function openApp() {
 	appDeploy.classList.add("app-deploy");
 	appDeploy.setAttribute("id", "appDeploy");
 
-	appDeploy.innerHTML = `APP EJECUTANDOSE`;
+	appDeploy.innerHTML = `
+			<iframe
+				src="../apps/01_SineWave/index.html"
+				class="app-iframe">
+			</iframe>`;
 
 	$appContainer.appendChild(appDeploy);
 }

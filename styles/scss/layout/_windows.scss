@@ -1,10 +1,10 @@
 .app-windows {
-	width: 40rem;
-	height: 35rem;
+	height: 75vh;
+	width: 80vw;
 
 	position: absolute;
-	top: 8%;
-	left: 28%;
+	top: 6vh;
+	left: 10vw;
 
 	background-color: $bg-window-th-black;
 
@@ -35,7 +35,12 @@
 }
 
 .app-container,
-.app-deploy {
+.app-deploy,
+.app-iframe {
 	height: 100%;
 	width: 100%;
+}
+
+.app-iframe {
+	border-style: none;
 }
