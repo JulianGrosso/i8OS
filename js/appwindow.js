@@ -29,6 +29,26 @@ function closeApp() {
 
 	let appDeploy = document.getElementById("appDeploy");
 	appDeploy.remove();
+
+	removeTitleWindow();
+}
+
+function getTitleWindow() {
+	setTimeout(() => {
+		let iframe = document.getElementById("appIframe");
+
+		let iframeTitle = iframe.contentWindow.document.title;
+
+		let windowTitle = `${iframeTitle}`;
+
+		document.getElementById("windowTitle").innerText = windowTitle;
+		document.getElementById("windowTitle").textContent = windowTitle;
+	}, 200);
+}
+
+function removeTitleWindow() {
+	document.getElementById("windowTitle").innerText = "";
+	document.getElementById("windowTitle").textContent = "";
 }
 
 // App Windows - Event Listener
