@@ -1,3 +1,9 @@
+// App Windows - Global Variables
+
+let windowState = false;
+
+// App Windows - Function
+
 function openApp() {
 	let windowAppState = $appWindow.classList.value;
 
@@ -29,11 +35,13 @@ function closeApp() {
 	appDeploy.remove();
 }
 
-$closeWindow.addEventListener("click", () => {
+// App Windows - Event Listener
+
+$closeWindowBtn.addEventListener("click", () => {
 	if (windowState === true) {
 		closeApp();
-		windowState = false;
+		closeAppTaskbarIcon();
 
-		$appTaskbarIcon.classList.add("hidden");
+		windowState = false;
 	}
 });

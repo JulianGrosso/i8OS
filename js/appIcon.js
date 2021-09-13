@@ -1,10 +1,20 @@
-let windowState = false;
+// App Icon - Function
+
+function openAppTaskbarIcon() {
+	$appTaskbarIcon.classList.remove("hidden");
+}
+
+function closeAppTaskbarIcon() {
+	$appTaskbarIcon.classList.add("hidden");
+}
+
+// App Icon - Event Listener
 
 $appIcon01.addEventListener("click", () => {
 	if (windowState === false) {
 		openApp();
-		windowState = true;
+		openAppTaskbarIcon();
 
-		$appTaskbarIcon.classList.remove("hidden");
+		windowState = true;
 	}
 });

@@ -1,7 +1,7 @@
-$desktopAll.addEventListener("click", () => {
-	let notifMenuState = $notifMenu.classList.value;
+// Desktop - Function
 
-	if (notifMenuState === "notification-menu unselect") {
-		$notifMenu.classList.add("hidden");
-	}
+// Desktop - Event Listener
+
+$desktopAll.addEventListener("click", () => {
+	closeNotifMenu();
 });

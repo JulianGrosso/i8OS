@@ -1,17 +1,11 @@
-$notifArea.addEventListener("click", () => {
-	let notifMenuState = $notifMenu.classList.value;
+// Taskbar - Function
 
-	if (notifMenuState === "notification-menu unselect hidden") {
-		$notifMenu.classList.remove("hidden");
-	} else if (notifMenuState === "notification-menu unselect") {
-		$notifMenu.classList.add("hidden");
-	}
+// Taskbar - Event Listener
+
+$notifArea.addEventListener("click", () => {
+	openCloseNotifMenu();
 });
 
 $startBtn.addEventListener("click", () => {
-	let notifMenuState = $notifMenu.classList.value;
-
-	if (notifMenuState === "notification-menu unselect") {
-		$notifMenu.classList.add("hidden");
-	}
+	closeNotifMenu();
 });

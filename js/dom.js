@@ -26,4 +26,4 @@ const $appIcon01 = document.querySelector("#appIcon01");
 
 const $appWindow = document.querySelector("#appWindow");
 const $appContainer = document.querySelector("#appContainer");
-const $closeWindow = document.querySelector("#closeWindow");
+const $closeWindowBtn = document.querySelector("#closeWindow");
