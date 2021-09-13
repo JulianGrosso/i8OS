@@ -486,12 +486,25 @@ input[type="range"]::-ms-track {
 }
 
 .w-controllers {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+  height: 2.2rem;
+  width: auto;
+  margin-top: 0.2rem;
+  margin-left: -0.25rem;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.w-controllers:hover {
+  background: rgba(110, 110, 110, 0.4);
 }
 
 .wc-close {
-  padding-right: 1.2rem;
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+}
+
+.wc-close:hover {
+  background: #a00000;
 }
 
 .app-container,

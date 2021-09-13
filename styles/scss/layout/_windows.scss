@@ -33,12 +33,22 @@
 }
 
 .w-controllers {
-	padding-left: 0.75rem;
-	padding-right: 0.75rem;
+	height: 2.2rem;
+	width: auto;
+	margin-top: 0.2rem;
+	margin-left: -0.25rem;
+
+	transition: 200ms ease-in-out;
+	&:hover {
+		background: $bg-w-controller;
+	}
 }
 
 .wc-close {
-	padding-right: 1.2rem;
+	transition: 200ms ease-in-out;
+	&:hover {
+		background: $bg-w-controller-close;
+	}
 }
 
 .app-container,
