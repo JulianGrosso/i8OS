@@ -1,6 +1,6 @@
 // App Windows - Global Variables
 
-let windowState = false;
+let windowState = "close";
 
 // App Windows - Function
 
@@ -33,6 +33,22 @@ function closeApp() {
 	removeTitleWindow();
 }
 
+function minimizeWindowApp() {
+	let windowAppState = $appWindow.classList.value;
+
+	if (windowAppState === "app-windows") {
+		$appWindow.classList.add("hidden");
+	}
+}
+
+function restoreWindowApp() {
+	let windowAppState = $appWindow.classList.value;
+
+	if (windowAppState === "app-windows hidden") {
+		$appWindow.classList.remove("hidden");
+	}
+}
+
 function getTitleWindow() {
 	setTimeout(() => {
 		let iframe = document.getElementById("appIframe");
@@ -54,10 +70,18 @@ function removeTitleWindow() {
 // App Windows - Event Listener
 
 $closeWindowBtn.addEventListener("click", () => {
-	if (windowState === true) {
+	if (windowState === "open") {
 		closeApp();
 		closeAppTaskbarIcon();
 
-		windowState = false;
+		windowState = "close";
+	}
+});
+
+$minimizeWindowBtn.addEventListener("click", () => {
+	if (windowState === "open") {
+		minimizeWindowApp();
+
+		windowState = "minimize";
 	}
 });

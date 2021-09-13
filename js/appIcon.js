@@ -11,12 +11,16 @@ function closeAppTaskbarIcon() {
 // App Icon - Event Listener
 
 $appIcon01.addEventListener("click", () => {
-	if (windowState === false) {
+	if (windowState === "close") {
 		openApp(codeSineWave);
 		openAppTaskbarIcon();
 
 		getTitleWindow();
 
-		windowState = true;
+		windowState = "open";
+	} else if (windowState === "minimize") {
+		restoreWindowApp();
+
+		windowState = "open";
 	}
 });
