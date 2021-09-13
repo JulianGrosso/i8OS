@@ -4,7 +4,7 @@ let windowState = false;
 
 // App Windows - Function
 
-function openApp() {
+function openApp(appCode) {
 	let windowAppState = $appWindow.classList.value;
 
 	if (windowAppState === "app-windows hidden") {
@@ -15,11 +15,7 @@ function openApp() {
 	appDeploy.classList.add("app-deploy");
 	appDeploy.setAttribute("id", "appDeploy");
 
-	appDeploy.innerHTML = `
-			<iframe
-				src="../apps/01_SineWave/index.html"
-				class="app-iframe">
-			</iframe>`;
+	appDeploy.innerHTML = appCode;
 
 	$appContainer.appendChild(appDeploy);
 }
