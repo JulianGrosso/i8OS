@@ -384,8 +384,8 @@ input[type="range"]::-ms-track {
 /* ----------------------------------------------------------------- */
 .app-desktop-icon {
   position: absolute;
-  top: 40%;
-  left: 15%;
+  top: 40vh;
+  left: 45vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,10 +449,10 @@ input[type="range"]::-ms-track {
 
 .app-windows {
   height: 75vh;
-  width: 80vw;
+  width: 75vw;
   position: absolute;
-  top: 6vh;
-  left: 10vw;
+  top: 3rem;
+  left: 12.5vw;
   background-color: #1e1e1e;
   z-index: 3;
   display: -webkit-box;
