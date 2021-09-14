@@ -149,13 +149,13 @@ body {
 .notification-menu {
   background: rgba(0, 0, 0, 0.86);
   border-radius: 30px;
-  height: 26rem;
-  width: 21rem;
+  height: 22rem;
+  width: 18rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   position: absolute;
-  right: 1.4rem;
-  bottom: 5rem;
+  right: 1.4vw;
+  bottom: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,9 +163,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -188,32 +188,33 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1.2rem;
 }
 
 .notif-menu-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   padding-right: 1.2rem;
 }
 
 .notif-menu-wifi,
 .notif-menu-battery {
-  height: 1.2rem;
+  height: 1rem;
   width: auto;
 }
 
 .notif-menu-battery-level {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .notif-menu-config {
-  height: 95%;
+  height: 1.8rem;
   width: auto;
 }
 
 /* ----------------------------------------------------------------- */
 .notif-menu-clock {
-  font-size: 6.5rem;
+  font-size: 6rem;
   font-weight: 200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +265,7 @@ body {
 }
 
 .selectors-icon {
-  height: 58%;
+  height: 50%;
   width: auto;
   padding: 0.4rem;
   border-radius: 10px;
@@ -273,7 +274,7 @@ body {
 }
 
 .selectors-icon:hover {
-  height: 58%;
+  height: 50%;
   width: auto;
   background: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
@@ -286,7 +287,7 @@ body {
 
 /* ----------------------------------------------------------------- */
 .notif-menu-audio {
-  width: 88%;
+  width: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,11 +301,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.audio-volume-ico {
+  height: 2rem;
+  width: auto;
 }
 
 .audio-volume-selector {
   background: none;
-  width: 80%;
+  width: 84%;
 }
 
 /* -------- Input Range Format -------- */
@@ -450,10 +457,10 @@ input[type="range"]::-ms-track {
 
 .app-windows {
   height: 75vh;
-  width: 75vw;
+  width: 60vw;
   position: absolute;
   top: 3rem;
-  left: 12.5vw;
+  left: 20vw;
   background-color: #1e1e1e;
   z-index: 3;
   display: -webkit-box;
