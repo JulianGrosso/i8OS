@@ -38,21 +38,21 @@ body {
           user-select: none !important;
 }
 
-.wallpaper02 {
+.wallpaper03 {
   background-image: url("../../assets/img/W-01.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.wallpaper01 {
+.wallpaper02 {
   background-image: url("../../assets/img/W-02.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.wallpaper03 {
+.wallpaper01 {
   background-image: url("../../assets/img/W-03.jpg");
   background-position: top center;
   background-size: cover;
@@ -384,8 +384,8 @@ input[type="range"]::-ms-track {
 /* ----------------------------------------------------------------- */
 .app-desktop-icon {
   position: absolute;
-  top: 40vh;
-  left: 45vw;
+  top: 35vh;
+  left: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,8 +403,8 @@ input[type="range"]::-ms-track {
 }
 
 .app-desktop-icon-logo {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
   background: white;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.35);
@@ -428,13 +428,14 @@ input[type="range"]::-ms-track {
 }
 
 .app-desktop-icon-img {
-  height: 1.6rem;
+  height: 1.2rem;
   width: auto;
 }
 
 .app-desktop-icon-name {
-  margin-top: 1rem;
-  font-size: 1.3rem;
+  margin-top: 0.6rem;
+  width: 6rem;
+  font-size: 1rem;
   font-style: normal;
   text-align: center;
   color: white;
