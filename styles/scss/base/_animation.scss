@@ -27,10 +27,10 @@
 }
 
 //
-// Animation 03 - Taskbar Icon & Window App - Zoom IN-OUT w opacity
+// Animation 03 - Taskbar Icon & Window Apps - Zoom IN-OUT w opacity
 
 .a03-base {
-	transition: 0.1s ease-in-out all;
+	transition: 0.2s ease-in-out all;
 	transform: scale(0.8);
 	opacity: 0;
 }
@@ -38,4 +38,18 @@
 .a03 {
 	opacity: 1;
 	transform: scale(1);
+}
+
+//
+// Animation 04 - Taskbar Startup - IN bottom w opacity
+
+.a04-base {
+	transition: 0.5s ease-in-out all;
+	transform: translateY(120%);
+	opacity: 0;
+}
+
+.a04 {
+	opacity: 1;
+	transform: translateY(0);
 }
