@@ -19,6 +19,12 @@
 	transition: 0.1s ease-in-out all;
 	transform: scale(0.9);
 	opacity: 0;
+
+	@media screen and (max-width: $littlescreen) {
+		transition: none;
+		transform: scale(1);
+		opacity: 1;
+	}
 }
 
 .a02 {

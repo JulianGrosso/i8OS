@@ -81,6 +81,16 @@ body {
   opacity: 0;
 }
 
+@media screen and (max-width: 425px) {
+  .a02-base {
+    -webkit-transition: none;
+    transition: none;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .a02 {
   opacity: 1;
   -webkit-transform: scale(1);
@@ -138,6 +148,12 @@ body {
   z-index: 20;
 }
 
+@media screen and (max-width: 425px) {
+  .taskbar {
+    height: 3.4rem;
+  }
+}
+
 .start-btn {
   margin-left: 1.4rem;
   height: 2.4rem;
@@ -149,6 +165,14 @@ body {
 .start-btn:hover {
   -webkit-transform: translateY(-0.15rem);
           transform: translateY(-0.15rem);
+}
+
+@media screen and (max-width: 425px) {
+  .start-btn {
+    margin-left: 1.2rem;
+    height: 2.3rem;
+    width: auto;
+  }
 }
 
 .notification-area {
@@ -178,11 +202,40 @@ body {
   background: rgba(255, 255, 255, 0.25);
 }
 
+@media screen and (max-width: 425px) {
+  .notification-area {
+    margin-right: 1.2rem;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+  }
+}
+
 .wifi-taskbar,
 .volume-taskbar,
 .battery-taskbar {
   height: 1.2rem;
   width: auto;
+}
+
+@media screen and (max-width: 425px) {
+  .wifi-taskbar,
+  .volume-taskbar,
+  .battery-taskbar {
+    display: none;
+  }
+}
+
+.menu-taskbar {
+  height: 0.9rem;
+  width: auto;
+  display: none;
+}
+
+@media screen and (max-width: 425px) {
+  .menu-taskbar {
+    display: initial;
+  }
 }
 
 .clock-taskbar {
@@ -191,9 +244,21 @@ body {
   margin-top: 0.1rem;
 }
 
+@media screen and (max-width: 425px) {
+  .clock-taskbar {
+    display: none;
+  }
+}
+
 .taskbar-icon {
   position: absolute;
   left: 48%;
+}
+
+@media screen and (max-width: 425px) {
+  .taskbar-icon {
+    left: 45vw;
+  }
 }
 
 .app-taskbar-icon {
@@ -533,6 +598,15 @@ input[type="range"]::-ms-track {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (max-width: 425px) {
+  .app-windows {
+    height: 60vh;
+    width: 98vw;
+    top: 6rem;
+    left: 1vw;
+  }
 }
 
 .w-bar {

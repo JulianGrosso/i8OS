@@ -14,6 +14,10 @@
 	align-items: center;
 
 	z-index: 20;
+
+	@media screen and (max-width: $littlescreen) {
+		height: 3.4rem;
+	}
 }
 
 .start-btn {
@@ -24,6 +28,12 @@
 	transition: 0.2s ease-in-out;
 	&:hover {
 		transform: translateY(-0.15rem);
+	}
+
+	@media screen and (max-width: $littlescreen) {
+		margin-left: 1.2rem;
+		height: 2.3rem;
+		width: auto;
 	}
 }
 
@@ -45,6 +55,13 @@
 	&:hover {
 		background: $bg-notification-area-hover;
 	}
+
+	@media screen and (max-width: $littlescreen) {
+		margin-right: 1.2rem;
+		height: 2.4rem;
+		width: 2.4rem;
+		border-radius: 50%;
+	}
 }
 
 .wifi-taskbar,
@@ -52,17 +69,39 @@
 .battery-taskbar {
 	height: 1.2rem;
 	width: auto;
+
+	@media screen and (max-width: $littlescreen) {
+		display: none;
+	}
+}
+
+.menu-taskbar {
+	height: 0.9rem;
+	width: auto;
+	display: none;
+
+	@media screen and (max-width: $littlescreen) {
+		display: initial;
+	}
 }
 
 .clock-taskbar {
 	font-size: 1.1rem;
 	font-weight: normal;
 	margin-top: 0.1rem;
+
+	@media screen and (max-width: $littlescreen) {
+		display: none;
+	}
 }
 
 .taskbar-icon {
 	position: absolute;
 	left: 48%;
+
+	@media screen and (max-width: $littlescreen) {
+		left: 45vw;
+	}
 }
 
 .app-taskbar-icon {
