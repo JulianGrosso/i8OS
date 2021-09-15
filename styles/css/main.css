@@ -39,24 +39,66 @@ body {
 }
 
 .wallpaper03 {
-  background-image: url("../../assets/img/W-01.jpg");
+  background-image: url("../../../assets/img/W-01.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .wallpaper02 {
-  background-image: url("../../assets/img/W-02.jpg");
+  background-image: url("../../../assets/img/W-02.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .wallpaper01 {
-  background-image: url("../../assets/img/W-03.jpg");
+  background-image: url("../../../assets/img/W-03.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.a01-base {
+  -webkit-transition: 0.2s ease-in-out all;
+  transition: 0.2s ease-in-out all;
+  -webkit-transform: translateX(22rem);
+          transform: translateX(22rem);
+  opacity: 0;
+}
+
+.a01 {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.a02-base {
+  -webkit-transition: 0.1s ease-in-out all;
+  transition: 0.1s ease-in-out all;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0;
+}
+
+.a02 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.a03-base {
+  -webkit-transition: 0.1s ease-in-out all;
+  transition: 0.1s ease-in-out all;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+}
+
+.a03 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .taskbar {
@@ -86,13 +128,13 @@ body {
   margin-left: 1.4rem;
   height: 2.4rem;
   width: auto;
-  -webkit-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .start-btn:hover {
-  height: 2.6rem;
-  width: auto;
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
 }
 
 .notification-area {
@@ -114,8 +156,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 200ms ease-in-out;
-  transition: 200ms ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .notification-area:hover {
@@ -144,6 +186,13 @@ body {
   margin-top: 0.6rem;
   height: 2.8rem;
   width: auto;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.app-taskbar-icon:hover {
+  -webkit-transform: translateY(-0.15rem);
+          transform: translateY(-0.15rem);
 }
 
 .notification-menu {
@@ -456,11 +505,11 @@ input[type="range"]::-ms-track {
 }
 
 .app-windows {
-  height: 75vh;
-  width: 60vw;
+  height: 70vh;
+  width: 70vw;
   position: absolute;
-  top: 3rem;
-  left: 20vw;
+  top: 6rem;
+  left: 15vw;
   background-color: #1e1e1e;
   z-index: 3;
   display: -webkit-box;

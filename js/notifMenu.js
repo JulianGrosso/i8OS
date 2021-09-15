@@ -5,33 +5,60 @@
 function openCloseNotifMenu() {
 	let notifMenuState = $notifMenu.classList.value;
 
-	if (notifMenuState === "notification-menu unselect hidden") {
+	if (notifMenuState === "notification-menu a01-base unselect hidden") {
 		$notifMenu.classList.remove("hidden");
-	} else if (notifMenuState === "notification-menu unselect") {
-		$notifMenu.classList.add("hidden");
+		setTimeout(() => {
+			$notifMenu.classList.add("a01");
+		}, 100);
+	} else if (notifMenuState === "notification-menu a01-base unselect a01") {
+		$notifMenu.classList.remove("a01");
+		setTimeout(() => {
+			$notifMenu.classList.add("hidden");
+		}, 300);
 	}
 }
 
 function closeNotifMenu() {
 	let notifMenuState = $notifMenu.classList.value;
 
-	if (notifMenuState === "notification-menu unselect") {
-		$notifMenu.classList.add("hidden");
+	if (notifMenuState === "notification-menu a01-base unselect a01") {
+		$notifMenu.classList.remove("a01");
+		setTimeout(() => {
+			$notifMenu.classList.add("hidden");
+		}, 200);
 	}
 }
 
 function changeWallpaper() {
-	let wallpaperState = $body.classList.value;
+	let wallpaperState = $wallpaper.classList.value;
 
-	if (wallpaperState === "wallpaper01") {
-		$body.classList.remove("wallpaper01");
-		$body.classList.add("wallpaper02");
-	} else if (wallpaperState === "wallpaper02") {
-		$body.classList.remove("wallpaper02");
-		$body.classList.add("wallpaper03");
-	} else if (wallpaperState === "wallpaper03") {
-		$body.classList.remove("wallpaper03");
-		$body.classList.add("wallpaper01");
+	if (wallpaperState === "desktop-all a02-base wallpaper01 a02") {
+		$wallpaper.classList.remove("a02");
+		setTimeout(() => {
+			$wallpaper.classList.remove("wallpaper01");
+			$wallpaper.classList.add("wallpaper02");
+		}, 100);
+		setTimeout(() => {
+			$wallpaper.classList.add("a02");
+		}, 150);
+	} else if (wallpaperState === "desktop-all a02-base wallpaper02 a02") {
+		$wallpaper.classList.remove("a02");
+		setTimeout(() => {
+			$wallpaper.classList.remove("wallpaper02");
+			$wallpaper.classList.add("wallpaper03");
+		}, 100);
+		setTimeout(() => {
+			$wallpaper.classList.add("a02");
+		}, 150);
+	} else if (wallpaperState === "desktop-all a02-base wallpaper03 a02") {
+		$wallpaper.classList.remove("a02");
+		setTimeout(() => {
+			$wallpaper.classList.remove("wallpaper03");
+			$wallpaper.classList.add("wallpaper01");
+		}, 100);
+		setTimeout(() => {
+			$wallpaper.classList.add("a02");
+		}, 150);
 	}
 }
 

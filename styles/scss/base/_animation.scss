@@ -1,0 +1,41 @@
+//
+// Animation 01 - Notification Menu - IN left w opacity
+
+.a01-base {
+	transition: 0.2s ease-in-out all;
+	transform: translateX(22rem);
+	opacity: 0;
+}
+
+.a01 {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+//
+// Animation 02 - Wallpapers - Zoom IN-OUT w opacity
+
+.a02-base {
+	transition: 0.1s ease-in-out all;
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+.a02 {
+	opacity: 1;
+	transform: scale(1);
+}
+
+//
+// Animation 03 - Taskbar Icon & Window App - Zoom IN-OUT w opacity
+
+.a03-base {
+	transition: 0.1s ease-in-out all;
+	transform: scale(0.8);
+	opacity: 0;
+}
+
+.a03 {
+	opacity: 1;
+	transform: scale(1);
+}

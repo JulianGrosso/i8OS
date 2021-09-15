@@ -6,12 +6,13 @@ const $body = document.querySelector("#body");
 // DOM elements - Desktop
 
 const $desktopAll = document.querySelector("#desktopAll");
+const $wallpaper = document.querySelector("#wallpaper");
 
 // DOM elements - Taskbar
 
 const $startBtn = document.querySelector("#startBtn");
 const $notifArea = document.querySelector("#notifArea");
-const $appTaskbarIcon = document.querySelector("#appTaskbarIcon")
+const $appTaskbarIcon = document.querySelector("#appTaskbarIcon");
 
 // DOM elements - Notification Menu
 
@@ -28,4 +29,4 @@ const $appWindow = document.querySelector("#appWindow");
 const $appContainer = document.querySelector("#appContainer");
 
 const $closeWindowBtn = document.querySelector("#closeWindow");
-const $minimizeWindowBtn = document.querySelector("#minimizeWindow")
+const $minimizeWindowBtn = document.querySelector("#minimizeWindow");

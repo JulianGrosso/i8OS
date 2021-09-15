@@ -5,11 +5,10 @@ let windowState = "close";
 // App Windows - Function
 
 function openApp(appCode) {
-	let windowAppState = $appWindow.classList.value;
-
-	if (windowAppState === "app-windows hidden") {
-		$appWindow.classList.remove("hidden");
-	}
+	$appWindow.classList.remove("hidden");
+	setTimeout(() => {
+		$appWindow.classList.add("a03");
+	}, 80);
 
 	const appDeploy = document.createElement("div");
 	appDeploy.classList.add("app-deploy");
@@ -21,11 +20,10 @@ function openApp(appCode) {
 }
 
 function closeApp() {
-	let windowAppState = $appWindow.classList.value;
-
-	if (windowAppState === "app-windows") {
+	$appWindow.classList.remove("a03");
+	setTimeout(() => {
 		$appWindow.classList.add("hidden");
-	}
+	}, 400);
 
 	let appDeploy = document.getElementById("appDeploy");
 	appDeploy.remove();
@@ -34,19 +32,17 @@ function closeApp() {
 }
 
 function minimizeWindowApp() {
-	let windowAppState = $appWindow.classList.value;
-
-	if (windowAppState === "app-windows") {
+	$appWindow.classList.remove("a03");
+	setTimeout(() => {
 		$appWindow.classList.add("hidden");
-	}
+	}, 400);
 }
 
 function restoreWindowApp() {
-	let windowAppState = $appWindow.classList.value;
-
-	if (windowAppState === "app-windows hidden") {
-		$appWindow.classList.remove("hidden");
-	}
+	$appWindow.classList.remove("hidden");
+	setTimeout(() => {
+		$appWindow.classList.add("a03");
+	}, 80);
 }
 
 function getTitleWindow() {
