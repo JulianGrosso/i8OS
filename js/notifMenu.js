@@ -37,27 +37,27 @@ function changeWallpaper() {
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper01");
 			$wallpaper.classList.add("wallpaper02");
-		}, 100);
-		setTimeout(() => {
-			$wallpaper.classList.add("a02");
+			setTimeout(() => {
+				$wallpaper.classList.add("a02");
+			}, 100);
 		}, 150);
 	} else if (wallpaperState === "desktop-all a02-base wallpaper02 a02") {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper02");
 			$wallpaper.classList.add("wallpaper03");
-		}, 100);
-		setTimeout(() => {
-			$wallpaper.classList.add("a02");
+			setTimeout(() => {
+				$wallpaper.classList.add("a02");
+			}, 100);
 		}, 150);
 	} else if (wallpaperState === "desktop-all a02-base wallpaper03 a02") {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper03");
 			$wallpaper.classList.add("wallpaper01");
-		}, 100);
-		setTimeout(() => {
-			$wallpaper.classList.add("a02");
+			setTimeout(() => {
+				$wallpaper.classList.add("a02");
+			}, 100);
 		}, 150);
 	}
 }

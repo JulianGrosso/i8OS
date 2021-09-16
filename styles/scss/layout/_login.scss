@@ -3,33 +3,81 @@
 	width: 100vw;
 
 	background-color: $bg-powerscreen-black;
+	background-image: url("../../../assets/img/W-01_blur.jpg");
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 
-	.poweri8OS-bg {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	@media screen and (max-width: $littlescreen) {
+		
 	}
 
-	.poweri8OS-btn {
-		height: 12.5rem;
-		width: auto;
-		border-radius: 50%;
+	.poweri8OS-text {
+		text-align: center;
+		font-size: 3.5rem;
+		font-weight: 200;
 
-		position: absolute;
+		@media screen and (max-width: $littlescreen) {
+			font-size: 3rem;
+		}
+	}
 
-		box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+	.poweri8OS {
+		width: 100%;
 
-		transition: 0.2s ease-in-out;
-		&:hover {
-			box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+		margin-top: 2rem;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		@media screen and (max-width: $littlescreen) {
+			margin-top: 2rem;
 		}
 
-		&:active {
+		.poweri8OS-bg {
+			position: relative;
+			left: 70px;
+			width: 200px;
+			height: auto;
+
+			border-radius: 50%;
+			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+
+			@media screen and (max-width: $littlescreen) {
+				width: 180px;
+				height: auto;
+			}
+		}
+
+		.poweri8OS-btn {
+			position: relative;
+			left: -100px;
+			width: 140px;
+			height: auto;
+			border-radius: 50%;
 			box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+
+			transition: 0.2s ease-in-out;
+			&:hover {
+				box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.45);
+			}
+
+			&:active {
+				box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+			}
+
+			@media screen and (max-width: $littlescreen) {
+				width: 130px;
+				height: auto;
+				left: -85px;
+			}
 		}
 	}
 }

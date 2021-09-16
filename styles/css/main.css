@@ -74,10 +74,10 @@ body {
 }
 
 .a02-base {
-  -webkit-transition: 0.1s ease-in-out all;
-  transition: 0.1s ease-in-out all;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  -webkit-transition: 0.15s ease-in-out all;
+  transition: 0.15s ease-in-out all;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   opacity: 0;
 }
 
@@ -112,8 +112,8 @@ body {
 }
 
 .a04-base {
-  -webkit-transition: 0.5s ease-in-out all;
-  transition: 0.5s ease-in-out all;
+  -webkit-transition: 1s ease-in-out all;
+  transition: 1s ease-in-out all;
   -webkit-transform: translateY(120%);
           transform: translateY(120%);
   opacity: 0;
@@ -153,9 +153,17 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #0e0e10;
+  background-image: url("../../../assets/img/W-01_blur.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -164,10 +172,28 @@ body {
           align-items: center;
 }
 
-.power-screen .poweri8OS-bg {
+.power-screen .poweri8OS-text {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 200;
+}
+
+@media screen and (max-width: 425px) {
+  .power-screen .poweri8OS-text {
+    font-size: 3rem;
+  }
+}
+
+.power-screen .poweri8OS {
+  width: 100%;
+  margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -176,25 +202,57 @@ body {
           align-items: center;
 }
 
-.power-screen .poweri8OS-btn {
-  height: 12.5rem;
-  width: auto;
+@media screen and (max-width: 425px) {
+  .power-screen .poweri8OS {
+    margin-top: 2rem;
+  }
+}
+
+.power-screen .poweri8OS .poweri8OS-bg {
+  position: relative;
+  left: 70px;
+  width: 200px;
+  height: auto;
   border-radius: 50%;
-  position: absolute;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 425px) {
+  .power-screen .poweri8OS .poweri8OS-bg {
+    width: 180px;
+    height: auto;
+  }
+}
+
+.power-screen .poweri8OS .poweri8OS-btn {
+  position: relative;
+  left: -100px;
+  width: 140px;
+  height: auto;
+  border-radius: 50%;
   -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.power-screen .poweri8OS-btn:hover {
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+.power-screen .poweri8OS .poweri8OS-btn:hover {
+  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.45);
+          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.45);
 }
 
-.power-screen .poweri8OS-btn:active {
+.power-screen .poweri8OS .poweri8OS-btn:active {
   -webkit-box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 425px) {
+  .power-screen .poweri8OS .poweri8OS-btn {
+    width: 130px;
+    height: auto;
+    left: -85px;
+  }
 }
 
 .taskbar {
@@ -514,7 +572,7 @@ body {
   width: 84%;
 }
 
-/* -------- Input Range Format -------- */
+/* -------- Input Range Format Reset -------- */
 input[type="range"] {
   display: block;
 }

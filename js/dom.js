@@ -6,6 +6,8 @@ const $body = document.querySelector("#body");
 // DOM elements - Power/Login
 
 const $powerScreen = document.querySelector("#powerScreen");
+const $poweri8OSText = document.querySelector("#poweri8OSText");
+const $poweri8OS = document.querySelector("#poweri8OS");
 const $powerBtn = document.querySelector("#powerBtn");
 
 // DOM elements - Desktop
