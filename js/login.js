@@ -12,16 +12,15 @@ function powerBtn() {
 	setTimeout(() => {
 		$powerScreen.classList.add("hidden");
 		wallpaperStartup();
-
-		audioStartup();
-
 		setTimeout(() => {
 			taskbarStartup();
 
+			audioStartup();
+
 			setTimeout(() => {
 				appIconStartup();
-			}, 400);
-		}, 300);
+			}, 300);
+		}, 200);
 	}, 350);
 }
 
