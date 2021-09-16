@@ -4,7 +4,7 @@
 
 	background-color: $bg-powerscreen-black;
 	background-image: url("../../../assets/img/W-01_blur.jpg");
-	background-position: top center;
+	background-position: bottom center;
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -14,7 +14,6 @@
 	align-items: center;
 
 	@media screen and (max-width: $littlescreen) {
-		
 	}
 
 	.poweri8OS-text {
@@ -23,14 +22,14 @@
 		font-weight: 200;
 
 		@media screen and (max-width: $littlescreen) {
-			font-size: 3rem;
+			font-size: 2.5rem;
 		}
 	}
 
 	.poweri8OS {
 		width: 100%;
 
-		margin-top: 2rem;
+		margin-bottom: 4rem;
 
 		display: flex;
 		flex-direction: row;
@@ -38,7 +37,7 @@
 		align-items: center;
 
 		@media screen and (max-width: $littlescreen) {
-			margin-top: 2rem;
+			margin-bottom: 2rem;
 		}
 
 		.poweri8OS-bg {

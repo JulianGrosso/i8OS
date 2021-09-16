@@ -42,7 +42,7 @@ function restoreWindowApp() {
 	$appWindow.classList.remove("hidden");
 	setTimeout(() => {
 		$appWindow.classList.add("a03");
-	}, 120);
+	}, 50);
 }
 
 function getTitleWindow() {
