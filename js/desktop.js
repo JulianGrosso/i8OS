@@ -17,19 +17,19 @@ function audioStartup() {
 	$audioStartup.play();
 }
 
-setTimeout(() => {
-	wallpaperStartup();
+// setTimeout(() => {
+// 	wallpaperStartup();
 
-	setTimeout(() => {
-		taskbarStartup();
+// 	setTimeout(() => {
+// 		taskbarStartup();
 
-		audioStartup();
+// 		audioStartup();
 
-		setTimeout(() => {
-			appIconStartup();
-		}, 400);
-	}, 200);
-}, 800);
+// 		setTimeout(() => {
+// 			appIconStartup();
+// 		}, 400);
+// 	}, 200);
+// }, 800);
 
 // Desktop - Event Listener
 

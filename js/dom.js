@@ -3,6 +3,11 @@
 
 const $body = document.querySelector("#body");
 
+// DOM elements - Power/Login
+
+const $powerScreen = document.querySelector("#powerScreen");
+const $powerBtn = document.querySelector("#powerBtn");
+
 // DOM elements - Desktop
 
 const $desktopAll = document.querySelector("#desktopAll");

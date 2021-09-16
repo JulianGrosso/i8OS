@@ -59,3 +59,24 @@
 	opacity: 1;
 	transform: translateY(0);
 }
+
+//
+// Animation 04 - Power Screen - Zoom OUT w opacity
+
+.a05-base {
+	transition: 0.3s ease-in-out all;
+	opacity: 1;
+
+	@media screen and (max-width: $littlescreen) {
+		transition: none;
+		opacity: 1;
+	}
+}
+
+.a05 {
+	opacity: 0;
+
+	@media screen and (max-width: $littlescreen) {
+		opacity: 1;
+	}
+}

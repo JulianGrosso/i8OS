@@ -1,7 +1,7 @@
 // Apps Code
 
 const codeSineWave = `<iframe
-							src="../apps/01_SineWave/index.html"
+							src="../apps/01_DancingStructures/index.html"
 							class="app-iframe" id="appIframe">
 						</iframe>`;
 
