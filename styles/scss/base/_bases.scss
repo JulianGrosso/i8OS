@@ -29,21 +29,28 @@ body {
 // Wallpapers
 
 .wallpaper01 {
+	background-image: url("../../../assets/img/W-05.jpg");
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.wallpaper02 {
 	background-image: url("../../../assets/img/W-01.jpg");
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.wallpaper02 {
+.wallpaper03 {
 	background-image: url("../../../assets/img/W-06.jpg");
-	background-position: top center;
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
-.wallpaper03 {
-	background-image: url("../../../assets/img/W-04.jpg");
+.wallpaper04 {
+	background-image: url("../../../assets/img/W-08.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;

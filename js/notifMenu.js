@@ -61,6 +61,15 @@ function changeWallpaper() {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper03");
+			$wallpaper.classList.add("wallpaper04");
+			setTimeout(() => {
+				$wallpaper.classList.add("a02");
+			}, 100);
+		}, 150);
+	} else if (wallpaperState === "desktop-all a02-base wallpaper04 a02") {
+		$wallpaper.classList.remove("a02");
+		setTimeout(() => {
+			$wallpaper.classList.remove("wallpaper04");
 			$wallpaper.classList.add("wallpaper01");
 			setTimeout(() => {
 				$wallpaper.classList.add("a02");

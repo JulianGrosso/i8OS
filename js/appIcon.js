@@ -18,7 +18,7 @@ function closeAppTaskbarIcon() {
 
 $appIcon01.addEventListener("click", () => {
 	if (windowState === "close") {
-		openApp(codeSineWave);
+		openApp(codeApp01);
 		openAppTaskbarIcon();
 
 		getTitleWindow();

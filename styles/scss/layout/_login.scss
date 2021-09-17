@@ -3,8 +3,8 @@
 	width: 100vw;
 
 	background-color: $bg-powerscreen-black;
-	background-image: url("../../../assets/img/W-01_blur.jpg");
-	background-position: bottom center;
+	background-image: url("../../../assets/img/W-05_blur.jpg");
+	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -15,68 +15,47 @@
 
 	.poweri8OS-text {
 		text-align: center;
-		font-size: 3rem;
-		font-weight: 200;
-
-		margin-left: -1rem;
+		font-size: 2rem;
+		font-weight: 300;
 
 		@media screen and (max-width: $littlescreen) {
-			font-size: 2.2rem;
+			font-size: 1.8rem;
 			font-weight: 300;
-			margin-left: 0rem;
 		}
 	}
 
 	.poweri8OS {
 		width: 100%;
 
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 
 		display: flex;
-		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 
 		@media screen and (max-width: $littlescreen) {
-			margin-bottom: 1rem;
-		}
-
-		.poweri8OS-bg {
-			position: relative;
-			left: 75px;
-			width: 200px;
-			height: auto;
-
-			border-radius: 50%;
-			// box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-
-			@media screen and (max-width: $littlescreen) {
-				width: 180px;
-				height: auto;
-			}
+			margin-top: -6rem;
+			margin-bottom: 1.5rem;
 		}
 
 		.poweri8OS-btn {
-			position: relative;
-			left: -105px;
 			width: 160px;
 			height: auto;
 			border-radius: 50%;
-			box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+			box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.8);
 
 			transition: 0.2s ease-in-out;
 			&:hover {
-				box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
+				box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.8);
 			}
 
 			&:active {
-				box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+				box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
 			}
 
 			@media screen and (max-width: $littlescreen) {
-				width: 145px;
+				width: 140px;
 				height: auto;
-				left: -87.5px;
 			}
 		}
 	}
