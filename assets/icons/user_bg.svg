@@ -5,13 +5,13 @@
         filter: url(#filter);
       }
     </style>
-    <filter id="filter" x="29" y="30" width="243" height="244" filterUnits="userSpaceOnUse">
+    <filter id="filter" x="18" y="18.156" width="267" height="266.844" filterUnits="userSpaceOnUse">
       <feOffset result="offset" dy="2" in="SourceAlpha"/>
       <feGaussianBlur result="blur" stdDeviation="1.414"/>
       <feFlood result="flood" flood-color="#fff" flood-opacity="0.5"/>
       <feComposite result="composite" operator="in" in2="blur"/>
       <feBlend result="blend" in="SourceGraphic"/>
-      <feImage preserveAspectRatio="none" x="30" y="30" width="240" height="240" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIgdmlld0JveD0iMCAwIDI0MCAyNDAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMTIwIiB5MT0iMjQwIiB4Mj0iMTIwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iI2M2Y2JkNSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNkNmRjZTYiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IGNsYXNzPSJjbHMtMSIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIyNDAiLz4KPC9zdmc+Cg=="/>
+      <feImage preserveAspectRatio="none" x="19.375" y="18.1562" width="262.844" height="262.844" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjYyLjg0NCIgaGVpZ2h0PSIyNjIuODQ0IiB2aWV3Qm94PSIwIDAgMjYyLjg0NCAyNjIuODQ0Ij4KICA8ZGVmcz4KICAgIDxzdHlsZT4KICAgICAgLmNscy0xIHsKICAgICAgICBmaWxsOiB1cmwoI2xpbmVhci1ncmFkaWVudCk7CiAgICAgIH0KICAgIDwvc3R5bGU+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImxpbmVhci1ncmFkaWVudCIgeDE9IjEzMS40MjIiIHkxPSIyNjIuODQ0IiB4Mj0iMTMxLjQyMiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNjNmNiZDUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZDZkY2U2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIyNjIuODQ0IiBoZWlnaHQ9IjI2Mi44NDQiLz4KPC9zdmc+Cg=="/>
       <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
       <feBlend result="blend-2" in2="blend"/>
       <feGaussianBlur result="blur-2" stdDeviation="3.464" in="SourceAlpha"/>
@@ -22,5 +22,5 @@
       <feBlend result="blend-3" mode="multiply" in2="blend-2"/>
     </filter>
   </defs>
-  <circle id="base" class="cls-1" cx="150" cy="150" r="120"/>
+  <circle id="base" class="cls-1" cx="150.797" cy="149.578" r="131.422"/>
 </svg>

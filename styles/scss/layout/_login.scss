@@ -13,23 +13,24 @@
 	justify-content: center;
 	align-items: center;
 
-	@media screen and (max-width: $littlescreen) {
-	}
-
 	.poweri8OS-text {
 		text-align: center;
-		font-size: 3.5rem;
+		font-size: 3rem;
 		font-weight: 200;
 
+		margin-left: -1rem;
+
 		@media screen and (max-width: $littlescreen) {
-			font-size: 2.5rem;
+			font-size: 2.2rem;
+			font-weight: 300;
+			margin-left: 0rem;
 		}
 	}
 
 	.poweri8OS {
 		width: 100%;
 
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 
 		display: flex;
 		flex-direction: row;
@@ -37,17 +38,17 @@
 		align-items: center;
 
 		@media screen and (max-width: $littlescreen) {
-			margin-bottom: 2rem;
+			margin-bottom: 1rem;
 		}
 
 		.poweri8OS-bg {
 			position: relative;
-			left: 70px;
+			left: 75px;
 			width: 200px;
 			height: auto;
 
 			border-radius: 50%;
-			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+			// box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
 
 			@media screen and (max-width: $littlescreen) {
 				width: 180px;
@@ -57,25 +58,25 @@
 
 		.poweri8OS-btn {
 			position: relative;
-			left: -100px;
-			width: 140px;
+			left: -105px;
+			width: 160px;
 			height: auto;
 			border-radius: 50%;
-			box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+			box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
 
 			transition: 0.2s ease-in-out;
 			&:hover {
-				box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.45);
+				box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.8);
 			}
 
 			&:active {
-				box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
 			}
 
 			@media screen and (max-width: $littlescreen) {
-				width: 130px;
+				width: 145px;
 				height: auto;
-				left: -85px;
+				left: -87.5px;
 			}
 		}
 	}
