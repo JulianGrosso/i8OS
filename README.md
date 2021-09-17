@@ -1,6 +1,6 @@
 # Infinity 8 OS
 
-[Live Link](https://)
+[Live Link](https://juliangrosso.github.io/i8OS/)
 
 ## Features
 
