@@ -39,28 +39,28 @@ body {
 }
 
 .wallpaper01 {
-  background-image: url("../../../assets/img/W-05.jpg");
+  background-image: url("../../assets/img/W-05.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .wallpaper02 {
-  background-image: url("../../../assets/img/W-01.jpg");
+  background-image: url("../../assets/img/W-01.jpg");
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .wallpaper03 {
-  background-image: url("../../../assets/img/W-06.jpg");
+  background-image: url("../../assets/img/W-06.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .wallpaper04 {
-  background-image: url("../../../assets/img/W-08.jpg");
+  background-image: url("../../assets/img/W-08.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -160,7 +160,7 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: #0e0e10;
-  background-image: url("../../../assets/img/W-05_blur.jpg");
+  background-image: url("../../assets/img/W-05_blur.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
