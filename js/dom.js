@@ -38,8 +38,3 @@ const $appContainer = document.querySelector("#appContainer");
 
 const $closeWindowBtn = document.querySelector("#closeWindow");
 const $minimizeWindowBtn = document.querySelector("#minimizeWindow");
-
-// DOM elements - Audios
-
-const $audioStartup = document.getElementById("audioI8Startup");
-$audioStartup.volume = 0.4;

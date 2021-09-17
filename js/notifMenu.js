@@ -7,14 +7,18 @@ function openCloseNotifMenu() {
 
 	if (notifMenuState === "notification-menu a01-base unselect hidden") {
 		$notifMenu.classList.remove("hidden");
+		audioSlide01();
 		setTimeout(() => {
 			$notifMenu.classList.add("a01");
 		}, 100);
 	} else if (notifMenuState === "notification-menu a01-base unselect a01") {
-		$notifMenu.classList.remove("a01");
+		audioSlide02();
 		setTimeout(() => {
-			$notifMenu.classList.add("hidden");
-		}, 300);
+			$notifMenu.classList.remove("a01");
+			setTimeout(() => {
+				$notifMenu.classList.add("hidden");
+			}, 300);
+		}, 100);
 	}
 }
 
@@ -22,10 +26,13 @@ function closeNotifMenu() {
 	let notifMenuState = $notifMenu.classList.value;
 
 	if (notifMenuState === "notification-menu a01-base unselect a01") {
-		$notifMenu.classList.remove("a01");
+		audioSlide02();
 		setTimeout(() => {
-			$notifMenu.classList.add("hidden");
-		}, 200);
+			$notifMenu.classList.remove("a01");
+			setTimeout(() => {
+				$notifMenu.classList.add("hidden");
+			}, 200);
+		}, 100);
 	}
 }
 

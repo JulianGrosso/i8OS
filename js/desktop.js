@@ -12,11 +12,6 @@ function taskbarStartup() {
 	$taskbar.classList.add("a04");
 }
 
-function audioStartup() {
-	$audioStartup.currentTime = 0;
-	$audioStartup.play();
-}
-
 // setTimeout(() => {
 // 	wallpaperStartup();
 
