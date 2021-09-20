@@ -8,15 +8,15 @@ function openApp(appCode) {
 	$appWindow.classList.remove("hidden");
 	setTimeout(() => {
 		$appWindow.classList.add("a03");
-	}, 80);
 
-	const appDeploy = document.createElement("div");
-	appDeploy.classList.add("app-deploy");
-	appDeploy.setAttribute("id", "appDeploy");
+		const appDeploy = document.createElement("div");
+		appDeploy.classList.add("app-deploy");
+		appDeploy.setAttribute("id", "appDeploy");
 
-	appDeploy.innerHTML = appCode;
+		appDeploy.innerHTML = appCode;
 
-	$appContainer.appendChild(appDeploy);
+		$appContainer.appendChild(appDeploy);
+	}, 100);
 }
 
 function closeApp() {
@@ -44,7 +44,7 @@ function restoreWindowApp() {
 	$appWindow.classList.remove("hidden");
 	setTimeout(() => {
 		$appWindow.classList.add("a03");
-	}, 50);
+	}, 100);
 
 	closeNotifMenu();
 }
@@ -59,7 +59,7 @@ function getTitleWindow() {
 
 		document.getElementById("windowTitle").innerText = windowTitle;
 		document.getElementById("windowTitle").textContent = windowTitle;
-	}, 200);
+	}, 800);
 }
 
 function removeTitleWindow() {
