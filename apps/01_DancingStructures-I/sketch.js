@@ -5,33 +5,7 @@ document.getElementsByTagName("body")[0].style.cursor =
 
 //--------------------------------------------------
 
-// Test 01 - Cuadrados y esfera girando
-/*
-function setup() {
-	createCanvas(windowWidth, windowHeight, WEBGL);
-	angleMode(DEGREES);
-}
-
-function draw() {
-	background(0);
-	noFill();
-	stroke(120, 120, 240);
-
-	rotateX(-20);
-	rotateY(frameCount);
-
-	box(300, 300, 300);
-
-	box(150, 150, 150);
-
-	noStroke();
-	fill(255, 255, 255);
-	sphere(60);
-}
-*/
-//--------------------------------------------------
-
-// Test 02 - Estructuras osilantes
+// Infinity 8 - Dancing Structures I
 
 let v1 = Math.floor(Math.random() * (140 - 120) + 120);
 let v2 = Math.floor(Math.random() * (7 - 4) + 4);
@@ -57,8 +31,6 @@ function draw() {
 	rotateY(frameCount / v3);
 
 	noFill();
-
-	// stroke(255);
 
 	let amount = 30;
 	let velocity = 2.5;
