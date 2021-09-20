@@ -36,6 +36,8 @@ function minimizeWindowApp() {
 	setTimeout(() => {
 		$appWindow.classList.add("hidden");
 	}, 400);
+
+	closeNotifMenu();
 }
 
 function restoreWindowApp() {
@@ -43,6 +45,8 @@ function restoreWindowApp() {
 	setTimeout(() => {
 		$appWindow.classList.add("a03");
 	}, 50);
+
+	closeNotifMenu();
 }
 
 function getTitleWindow() {
