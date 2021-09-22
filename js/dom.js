@@ -28,7 +28,7 @@ const $wallpaperBtn = document.querySelector("#wallpaperBtn");
 
 // DOM elements - App Icon
 
-const $iconContainer = document.querySelector("#iconContainer");
+const $iconsContainer = document.querySelector("#iconsContainer");
 const $appIcon01 = document.querySelector("#appIcon01");
 
 // DOM elements - Windows

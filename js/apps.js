@@ -93,3 +93,24 @@ $minimizeWindowBtn.addEventListener("click", () => {
 		windowState = "minimize";
 	}
 });
+
+//----------------------------------------------------------------------------
+
+/*
+
+function newAppIcon(nameApp, id, iconSrc) {
+	const appIcon = document.createElement("div");
+	appIcon.classList.add("app-desktop-icon");
+	appIcon.classList.add("unselect");
+	appIcon.setAttribute("id", id);
+
+	appIcon.innerHTML = `<img class="app-desktop-icon-img" src=${iconSrc}
+							alt=${nameApp} />
+							<p class="app-desktop-icon-name">${nameApp}</p>`;
+
+	$iconsContainer.appendChild(appIcon);
+}
+
+newAppIcon("Dancing Structures I", "appIcon01", "./assets/img/user_i8OS.jpg");
+
+*/

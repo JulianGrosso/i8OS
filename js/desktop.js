@@ -8,7 +8,7 @@ function wallpaperStartup() {
 }
 
 function appIconStartup() {
-	$iconContainer.classList.add("a03");
+	$iconsContainer.classList.add("a03");
 }
 
 function taskbarStartup() {
