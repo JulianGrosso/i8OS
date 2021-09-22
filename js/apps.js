@@ -6,35 +6,90 @@ const codeApp02 = `<iframe src="./apps/02_FlowLines/index.html" class="app-ifram
 
 //----------------------------------------------------------------------------
 
-// App Icon - Function
+// App Windows - Global Variables
 
-function openAppTaskbarIcon() {
-	$appTaskbarIcon.classList.remove("hidden");
+let windowState = "close";
+
+// App Windows - Function
+
+function openApp(appCode) {
+	$appWindow.classList.remove("hidden");
 	setTimeout(() => {
-		$appTaskbarIcon.classList.add("a03");
-	}, 80);
+		$appWindow.classList.add("a03");
+
+		const appDeploy = document.createElement("div");
+		appDeploy.classList.add("app-deploy");
+		appDeploy.setAttribute("id", "appDeploy");
+
+		appDeploy.innerHTML = appCode;
+
+		$appContainer.appendChild(appDeploy);
+	}, 100);
 }
 
-function closeAppTaskbarIcon() {
-	$appTaskbarIcon.classList.remove("a03");
+function closeApp() {
+	$appWindow.classList.remove("a03");
 	setTimeout(() => {
-		$appTaskbarIcon.classList.add("hidden");
+		$appWindow.classList.add("hidden");
 	}, 400);
+
+	let appDeploy = document.getElementById("appDeploy");
+	appDeploy.remove();
+
+	removeTitleWindow();
 }
 
-// App Icon - Event Listener
+function minimizeWindowApp() {
+	$appWindow.classList.remove("a03");
+	setTimeout(() => {
+		$appWindow.classList.add("hidden");
+	}, 400);
 
-$appIcon01.addEventListener("click", () => {
-	if (windowState === "close") {
-		openApp(codeApp01);
-		openAppTaskbarIcon();
+	closeNotifMenu();
+}
 
-		getTitleWindow();
+function restoreWindowApp() {
+	$appWindow.classList.remove("hidden");
+	setTimeout(() => {
+		$appWindow.classList.add("a03");
+	}, 100);
 
-		windowState = "open";
-	} else if (windowState === "minimize") {
-		restoreWindowApp();
+	closeNotifMenu();
+}
 
-		windowState = "open";
+function getTitleWindow() {
+	setTimeout(() => {
+		let iframe = document.getElementById("appIframe");
+
+		let iframeTitle = iframe.contentWindow.document.title;
+
+		let windowTitle = `${iframeTitle}`;
+
+		document.getElementById("windowTitle").innerText = windowTitle;
+		document.getElementById("windowTitle").textContent = windowTitle;
+	}, 800);
+}
+
+function removeTitleWindow() {
+	document.getElementById("windowTitle").innerText = "";
+	document.getElementById("windowTitle").textContent = "";
+}
+
+// App Windows - Event Listener
+
+$closeWindowBtn.addEventListener("click", () => {
+	if (windowState === "open") {
+		closeApp();
+		closeAppTaskbarIcon();
+
+		windowState = "close";
+	}
+});
+
+$minimizeWindowBtn.addEventListener("click", () => {
+	if (windowState === "open") {
+		minimizeWindowApp();
+
+		windowState = "minimize";
 	}
 });
