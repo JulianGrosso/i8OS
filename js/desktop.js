@@ -15,20 +15,6 @@ function taskbarStartup() {
 	$taskbar.classList.add("a04");
 }
 
-// setTimeout(() => {
-// 	wallpaperStartup();
-
-// 	setTimeout(() => {
-// 		taskbarStartup();
-
-// 		audioStartup();
-
-// 		setTimeout(() => {
-// 			appIconStartup();
-// 		}, 400);
-// 	}, 200);
-// }, 800);
-
 // Desktop - Event Listener
 
 $desktopAll.addEventListener("click", () => {
