@@ -155,22 +155,8 @@ body {
   opacity: 1;
 }
 
-@media screen and (max-width: 425px) {
-  .a05-base {
-    -webkit-transition: none;
-    transition: none;
-    opacity: 1;
-  }
-}
-
 .a05 {
   opacity: 0;
-}
-
-@media screen and (max-width: 425px) {
-  .a05 {
-    opacity: 1;
-  }
 }
 
 .login-screen {

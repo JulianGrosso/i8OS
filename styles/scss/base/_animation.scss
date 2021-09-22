@@ -66,17 +66,8 @@
 .a05-base {
 	transition: 0.3s ease-in-out all;
 	opacity: 1;
-
-	@media screen and (max-width: $littlescreen) {
-		transition: none;
-		opacity: 1;
-	}
 }
 
 .a05 {
 	opacity: 0;
-
-	@media screen and (max-width: $littlescreen) {
-		opacity: 1;
-	}
 }
