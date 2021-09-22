@@ -1,16 +1,16 @@
 // Power - Function
 
 setTimeout(() => {
-	$poweri8OSText.classList.add("a03");
-	$poweri8OS.classList.add("a03");
+	$loginUserImg.classList.add("a03");
+	$loginUserName.classList.add("a03");
 }, 200);
 
 // Power - Function
 
 function powerBtn() {
-	$powerScreen.classList.add("a05");
+	$loginScreen.classList.add("a05");
 	setTimeout(() => {
-		$powerScreen.classList.add("hidden");
+		$loginScreen.classList.add("hidden");
 		wallpaperStartup();
 		setTimeout(() => {
 			taskbarStartup();
@@ -26,6 +26,10 @@ function powerBtn() {
 
 // Power - Event Listener
 
-$powerBtn.addEventListener("click", () => {
+$loginUserImg.addEventListener("click", () => {
+	powerBtn();
+});
+
+$loginUserName.addEventListener("click", () => {
 	powerBtn();
 });

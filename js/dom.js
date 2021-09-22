@@ -3,12 +3,11 @@
 
 const $body = document.querySelector("#body");
 
-// DOM elements - Power/Login
+// DOM elements - Login
 
-const $powerScreen = document.querySelector("#powerScreen");
-const $poweri8OSText = document.querySelector("#poweri8OSText");
-const $poweri8OS = document.querySelector("#poweri8OS");
-const $powerBtn = document.querySelector("#powerBtn");
+const $loginScreen = document.querySelector("#loginScreen");
+const $loginUserImg = document.querySelector("#loginUserImg");
+const $loginUserName = document.querySelector("#loginUserName");
 
 // DOM elements - Desktop
 

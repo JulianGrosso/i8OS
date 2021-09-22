@@ -15,50 +15,45 @@
 
 	z-index: 8;
 
-	.logini8OS-text {
+	.login-user-img {
+		width: 10rem;
+		height: auto;
+		border-radius: 50%;
+		box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.8);
+
+		margin-bottom: 2rem;
+
+		transition: 0.2s ease-in-out;
+		&:hover {
+			box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.8);
+		}
+
+		&:active {
+			box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
+		}
+
+		@media screen and (max-width: $littlescreen) {
+			width: 8.75rem;
+			height: auto;
+
+			margin-top: -4rem;
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.login-user-name {
 		text-align: center;
 		font-size: 2rem;
 		font-weight: 300;
 
+		transition: 0.2s ease-in-out;
+		&:hover {
+			text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.6);
+		}
+
 		@media screen and (max-width: $littlescreen) {
 			font-size: 1.8rem;
 			font-weight: 300;
-		}
-	}
-
-	.logini8OS {
-		width: 100%;
-
-		margin-bottom: 1.5rem;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		@media screen and (max-width: $littlescreen) {
-			margin-top: -6rem;
-			margin-bottom: 1.5rem;
-		}
-
-		.logini8OS-btn {
-			width: 160px;
-			height: auto;
-			border-radius: 50%;
-			box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.8);
-
-			transition: 0.2s ease-in-out;
-			&:hover {
-				box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.8);
-			}
-
-			&:active {
-				box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.8);
-			}
-
-			@media screen and (max-width: $littlescreen) {
-				width: 140px;
-				height: auto;
-			}
 		}
 	}
 }
