@@ -1,11 +1,14 @@
 // Startup Functions
 
 function wallpaperStartup() {
-	$wallpaper.classList.add("a02");
+	$wallpaper.classList.remove("hidden");
+	setTimeout(() => {
+		$wallpaper.classList.add("a02");
+	}, 20);
 }
 
 function appIconStartup() {
-	$appIcon01.classList.add("a03");
+	$iconContainer.classList.add("a03");
 }
 
 function taskbarStartup() {

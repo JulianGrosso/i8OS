@@ -39,7 +39,7 @@ function closeNotifMenu() {
 function changeWallpaper() {
 	let wallpaperState = $wallpaper.classList.value;
 
-	if (wallpaperState === "desktop-all a02-base wallpaper01 a02") {
+	if (wallpaperState === "wallpaper a02-base wallpaper01 a02") {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper01");
@@ -48,7 +48,7 @@ function changeWallpaper() {
 				$wallpaper.classList.add("a02");
 			}, 100);
 		}, 150);
-	} else if (wallpaperState === "desktop-all a02-base wallpaper02 a02") {
+	} else if (wallpaperState === "wallpaper a02-base wallpaper02 a02") {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper02");
@@ -57,7 +57,7 @@ function changeWallpaper() {
 				$wallpaper.classList.add("a02");
 			}, 100);
 		}, 150);
-	} else if (wallpaperState === "desktop-all a02-base wallpaper03 a02") {
+	} else if (wallpaperState === "wallpaper a02-base wallpaper03 a02") {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper03");
@@ -66,7 +66,7 @@ function changeWallpaper() {
 				$wallpaper.classList.add("a02");
 			}, 100);
 		}, 150);
-	} else if (wallpaperState === "desktop-all a02-base wallpaper04 a02") {
+	} else if (wallpaperState === "wallpaper a02-base wallpaper04 a02") {
 		$wallpaper.classList.remove("a02");
 		setTimeout(() => {
 			$wallpaper.classList.remove("wallpaper04");

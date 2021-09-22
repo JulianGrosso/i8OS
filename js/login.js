@@ -20,7 +20,7 @@ function powerBtn() {
 			setTimeout(() => {
 				appIconStartup();
 			}, 300);
-		}, 200);
+		}, 100);
 	}, 350);
 }
 

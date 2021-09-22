@@ -14,6 +14,19 @@ body {
 	width: 100vw;
 
 	z-index: 1;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.wallpaper {
+	height: 100vh;
+	width: 100vw;
+
+	position: absolute;
+	top: 0%;
+	left: 0%;
 }
 
 // CSS Condition

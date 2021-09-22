@@ -1,4 +1,4 @@
-.power-screen {
+.login-screen {
 	height: 100vh;
 	width: 100vw;
 
@@ -13,7 +13,9 @@
 	justify-content: center;
 	align-items: center;
 
-	.poweri8OS-text {
+	z-index: 8;
+
+	.logini8OS-text {
 		text-align: center;
 		font-size: 2rem;
 		font-weight: 300;
@@ -24,7 +26,7 @@
 		}
 	}
 
-	.poweri8OS {
+	.logini8OS {
 		width: 100%;
 
 		margin-bottom: 1.5rem;
@@ -38,7 +40,7 @@
 			margin-bottom: 1.5rem;
 		}
 
-		.poweri8OS-btn {
+		.logini8OS-btn {
 			width: 160px;
 			height: auto;
 			border-radius: 50%;
