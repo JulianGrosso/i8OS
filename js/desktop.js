@@ -20,20 +20,3 @@ function taskbarStartup() {
 $desktopAll.addEventListener("click", () => {
 	closeNotifMenu();
 });
-
-// App Icon - Event Listener
-
-$appIcon01.addEventListener("click", () => {
-	if (windowState === "close") {
-		openApp(codeApp01);
-		openAppTaskbarIcon();
-
-		getTitleWindow();
-
-		windowState = "open";
-	} else if (windowState === "minimize") {
-		restoreWindowApp();
-
-		windowState = "open";
-	}
-});

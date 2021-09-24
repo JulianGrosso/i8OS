@@ -624,7 +624,7 @@ input[type="range"]::-ms-track {
 }
 
 /* ----------------------------------------------------------------- */
-.icon-container {
+.icons-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
