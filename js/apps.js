@@ -2,15 +2,29 @@
 
 const app01 = {
 	name: "Dancing Structures I",
-	code: '<iframe src="./apps/01_DancingStructures-I/index.html" class="app-iframe" id="appIframe"></iframe>',
+	code: '<iframe src="./i8applications/01 Infinite8_i8c003o001/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app01",
 	iconImg: "./assets/img/user_i8OS.jpg",
 };
 
 const app02 = {
-	name: "Flow Lines",
-	code: '<iframe src="./apps/02_FlowLines/index.html" class="app-iframe" id="appIframe"></iframe>',
+	name: "Dancing Structures II",
+	code: '<iframe src="./i8applications/02 Infinite8_i8c003o002/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app02",
+	iconImg: "./assets/img/user_i8OS.jpg",
+};
+
+const app03 = {
+	name: "Dancing Structures III",
+	code: '<iframe src="./i8applications/03 Infinite8_i8c003o003/index.html" class="app-iframe" id="appIframe"></iframe>',
+	id: "app03",
+	iconImg: "./assets/img/user_i8OS.jpg",
+};
+
+const app04 = {
+	name: "Dancing Structures IV",
+	code: '<iframe src="./i8applications/04 Infinite8_i8c003o004/index.html" class="app-iframe" id="appIframe"></iframe>',
+	id: "app04",
 	iconImg: "./assets/img/user_i8OS.jpg",
 };
 
@@ -18,7 +32,7 @@ const app02 = {
 
 // Create App Icons
 
-function newAppIcon(app) {
+function createAppIcon(app) {
 	let nameApp = app.name;
 	let idApp = app.id;
 	let iconImg = app.iconImg;
@@ -34,8 +48,12 @@ function newAppIcon(app) {
 	$iconsContainer.appendChild(appIcon);
 }
 
-newAppIcon(app01);
-newAppIcon(app02);
+createAppIcon(app01);
+createAppIcon(app02);
+createAppIcon(app03);
+createAppIcon(app04);
+
+//----------------------------------------------------------------------------
 
 // App Windows - Global Variables
 
@@ -67,6 +85,8 @@ function startApp(iconId) {
 		windowState = "open";
 	}
 
+	//----------------------
+
 	if (windowState === "close" && iconId === "app02") {
 		appCode = app02.code;
 
@@ -81,6 +101,50 @@ function startApp(iconId) {
 		windowState === "minimize" &&
 		iconId === "app02" &&
 		appOpenNow === "App 02"
+	) {
+		restoreWindowApp();
+
+		windowState = "open";
+	}
+
+	//----------------------
+
+	if (windowState === "close" && iconId === "app03") {
+		appCode = app03.code;
+
+		openApp(appCode);
+		openAppTaskbarIcon();
+
+		getTitleWindow();
+
+		windowState = "open";
+		appOpenNow = "App 03";
+	} else if (
+		windowState === "minimize" &&
+		iconId === "app03" &&
+		appOpenNow === "App 03"
+	) {
+		restoreWindowApp();
+
+		windowState = "open";
+	}
+
+	//----------------------
+
+	if (windowState === "close" && iconId === "app04") {
+		appCode = app04.code;
+
+		openApp(appCode);
+		openAppTaskbarIcon();
+
+		getTitleWindow();
+
+		windowState = "open";
+		appOpenNow = "App 04";
+	} else if (
+		windowState === "minimize" &&
+		iconId === "app04" &&
+		appOpenNow === "App 04"
 	) {
 		restoreWindowApp();
 
