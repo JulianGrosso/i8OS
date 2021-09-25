@@ -1,3 +1,5 @@
+// i8 OS v 1.1
+
 // Power - Function
 
 setTimeout(() => {
@@ -5,9 +7,9 @@ setTimeout(() => {
 	$loginUserName.classList.add("a03");
 }, 200);
 
-// Power - Function
+// Login - Function
 
-function powerBtn() {
+function loginBtn() {
 	$loginScreen.classList.add("a05");
 	setTimeout(() => {
 		$loginScreen.classList.add("hidden");
@@ -24,12 +26,12 @@ function powerBtn() {
 	}, 350);
 }
 
-// Power - Event Listener
+// Login - Event Listener
 
 $loginUserImg.addEventListener("click", () => {
-	powerBtn();
+	loginBtn();
 });
 
 $loginUserName.addEventListener("click", () => {
-	powerBtn();
+	loginBtn();
 });

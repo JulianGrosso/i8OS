@@ -1,4 +1,5 @@
-//
+// i8 OS v 1.1
+
 // DOM elements - Body
 
 const $body = document.querySelector("#body");

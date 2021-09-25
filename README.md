@@ -16,3 +16,5 @@ i8 OS is a simulation of an operative system built with HTML, SASS, and Vanilla 
 - SASS
 - JavaScript
 - p5js
+
+### Current version: 1.1

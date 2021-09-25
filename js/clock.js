@@ -1,3 +1,5 @@
+// i8 OS v 1.1
+
 // Get System Time
 
 function showTime() {

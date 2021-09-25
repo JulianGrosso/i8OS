@@ -1,4 +1,4 @@
-// Notification Menu - Global Variables
+// i8 OS v 1.1
 
 // Notification Menu - Function
 
