@@ -65,90 +65,24 @@ let appOpenNow = "";
 function startApp(iconId) {
 	let appCode;
 
-	if (windowState === "close" && iconId === "app01") {
+	if (iconId === "app01") {
 		appCode = app01.code;
-
-		openApp(appCode);
-		openAppTaskbarIcon();
-
-		getTitleWindow();
-
-		windowState = "open";
-		appOpenNow = "App 01";
-	} else if (
-		windowState === "minimize" &&
-		iconId === "app01" &&
-		appOpenNow === "App 01"
-	) {
-		restoreWindowApp();
-
-		windowState = "open";
-	}
-
-	//----------------------
-
-	if (windowState === "close" && iconId === "app02") {
+	} else if (iconId === "app02") {
 		appCode = app02.code;
-
-		openApp(appCode);
-		openAppTaskbarIcon();
-
-		getTitleWindow();
-
-		windowState = "open";
-		appOpenNow = "App 02";
-	} else if (
-		windowState === "minimize" &&
-		iconId === "app02" &&
-		appOpenNow === "App 02"
-	) {
-		restoreWindowApp();
-
-		windowState = "open";
-	}
-
-	//----------------------
-
-	if (windowState === "close" && iconId === "app03") {
+	} else if (iconId === "app03") {
 		appCode = app03.code;
-
-		openApp(appCode);
-		openAppTaskbarIcon();
-
-		getTitleWindow();
-
-		windowState = "open";
-		appOpenNow = "App 03";
-	} else if (
-		windowState === "minimize" &&
-		iconId === "app03" &&
-		appOpenNow === "App 03"
-	) {
-		restoreWindowApp();
-
-		windowState = "open";
+	} else if (iconId === "app04") {
+		appCode = app04.code;
 	}
 
-	//----------------------
-
-	if (windowState === "close" && iconId === "app04") {
-		appCode = app04.code;
-
+	if (windowState === "close") {
 		openApp(appCode);
 		openAppTaskbarIcon();
 
 		getTitleWindow();
 
 		windowState = "open";
-		appOpenNow = "App 04";
-	} else if (
-		windowState === "minimize" &&
-		iconId === "app04" &&
-		appOpenNow === "App 04"
-	) {
-		restoreWindowApp();
-
-		windowState = "open";
+		appOpenNow = iconId;
 	}
 }
 
@@ -201,6 +135,13 @@ function restoreWindowApp() {
 	closeNotifMenu();
 }
 
+function iconRestoreWindowApp(iconId) {
+	if (windowState === "minimize" && appOpenNow === iconId) {
+		restoreWindowApp();
+		windowState = "open";
+	}
+}
+
 function getTitleWindow() {
 	setTimeout(() => {
 		let iframe = document.getElementById("appIframe");
@@ -243,5 +184,9 @@ $minimizeWindowBtn.addEventListener("click", () => {
 $iconsContainer.addEventListener("click", (e) => {
 	let iconId = e.path[1].id;
 
-	startApp(iconId);
+	if (windowState === "close") {
+		startApp(iconId);
+	} else if (windowState === "minimize") {
+		iconRestoreWindowApp(iconId);
+	}
 });
