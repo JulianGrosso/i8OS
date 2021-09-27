@@ -30,6 +30,13 @@ const app04 = {
 	iconImg: "./assets/img/user_i8OS.jpg",
 };
 
+const app05 = {
+	name: "Dancing Structures V",
+	code: '<iframe src="./i8applications/05 Infinite8_i8c003o005/index.html" class="app-iframe" id="appIframe"></iframe>',
+	id: "app05",
+	iconImg: "./assets/img/user_i8OS.jpg",
+};
+
 //----------------------------------------------------------------------------
 
 // Create App Icons
@@ -54,6 +61,7 @@ createAppIcon(app01);
 createAppIcon(app02);
 createAppIcon(app03);
 createAppIcon(app04);
+createAppIcon(app05);
 
 //----------------------------------------------------------------------------
 
@@ -75,6 +83,8 @@ function startApp(iconId) {
 		appCode = app03.code;
 	} else if (iconId === "app04") {
 		appCode = app04.code;
+	} else if (iconId === "app05") {
+		appCode = app05.code;
 	}
 
 	if (windowState === "close") {

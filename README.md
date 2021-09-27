@@ -13,7 +13,7 @@ i8 OS is a simulation of an operative system built with HTML, SASS, and Vanilla 
 
 - HTML5
 - CSS3
-- SASS
+- SCSS/SASS
 - JavaScript
 - p5js
 

@@ -5,6 +5,6 @@
 ## Version 1.1
 
 - Add multiapp support.
-- Add 4 p5js generative app: Dancing Structures I, II, III and IV.
+- Add 5 p5js generative app: Dancing Structures I, II, III, IV and V.
 - Changes in the icon layout.
 - Changes in UI.
