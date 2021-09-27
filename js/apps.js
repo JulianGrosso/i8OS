@@ -88,7 +88,7 @@ function startApp(iconId) {
 	}
 
 	if (windowState === "close") {
-		openApp(appCode);
+		deployApp(appCode);
 		openAppTaskbarIcon();
 
 		getTitleWindow();
@@ -98,7 +98,7 @@ function startApp(iconId) {
 	}
 }
 
-function openApp(appCode) {
+function deployApp(appCode) {
 	$appWindow.classList.remove("hidden");
 	setTimeout(() => {
 		$appWindow.classList.add("a03");
