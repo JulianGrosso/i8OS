@@ -7,12 +7,10 @@ function openCloseNotifMenu() {
 
 	if (notifMenuState === "notification-menu a01-base unselect hidden") {
 		$notifMenu.classList.remove("hidden");
-		audioSlide01();
 		setTimeout(() => {
 			$notifMenu.classList.add("a01");
 		}, 100);
 	} else if (notifMenuState === "notification-menu a01-base unselect a01") {
-		audioSlide02();
 		setTimeout(() => {
 			$notifMenu.classList.remove("a01");
 			setTimeout(() => {
@@ -26,7 +24,6 @@ function closeNotifMenu() {
 	let notifMenuState = $notifMenu.classList.value;
 
 	if (notifMenuState === "notification-menu a01-base unselect a01") {
-		audioSlide02();
 		setTimeout(() => {
 			$notifMenu.classList.remove("a01");
 			setTimeout(() => {
