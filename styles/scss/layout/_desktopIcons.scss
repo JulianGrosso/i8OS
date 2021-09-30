@@ -2,15 +2,21 @@
 
 .icons-container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 
-	max-height: 90vh;
-	margin-top: 1rem;
+	width: 45vw;
+	max-height: 80vh;
+	margin-top: 12rem;
 
 	z-index: 3;
+
+	@media screen and (max-width: $littlescreen) {
+		width: 98vw;
+		margin-top: -4rem;
+	}
 }
 
 //------------------------------------------------------
@@ -18,7 +24,8 @@
 .app-desktop-icon {
 	margin-top: 1rem;
 	margin-bottom: 0.5rem;
-	margin-left: 1rem;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 
 	display: flex;
 	flex-direction: column;

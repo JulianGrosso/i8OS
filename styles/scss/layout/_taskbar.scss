@@ -2,11 +2,8 @@
 	background: $bg-Sys-BlackTransp;
 	border-radius: 34px 34px 0px 0px;
 
-	width: 100%;
+	width: 100vw;
 	height: 3.8rem;
-
-	position: absolute;
-	bottom: 0%;
 
 	display: flex;
 	flex-direction: row;
@@ -17,6 +14,8 @@
 
 	@media screen and (max-width: $littlescreen) {
 		height: 3.4rem;
+		position: absolute;
+		bottom: 0vh;
 	}
 }
 
