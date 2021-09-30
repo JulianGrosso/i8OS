@@ -85,6 +85,8 @@ function startApp(iconId) {
 		appCode = app04.code;
 	} else if (iconId === "app05") {
 		appCode = app05.code;
+	} else {
+		return;
 	}
 
 	if (windowState === "close") {
