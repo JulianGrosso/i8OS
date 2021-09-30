@@ -204,3 +204,13 @@ $iconsContainer.addEventListener("click", (e) => {
 		iconRestoreWindowApp(iconId);
 	}
 });
+
+$iconsContainer.addEventListener("touchstart", (e) => {
+	let iconId = e.path[1].id;
+
+	if (windowState === "close") {
+		startApp(iconId);
+	} else if (windowState === "minimize") {
+		iconRestoreWindowApp(iconId);
+	}
+});
