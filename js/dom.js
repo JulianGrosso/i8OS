@@ -44,3 +44,4 @@ const $appContainer = document.querySelector("#appContainer");
 
 const $closeWindowBtn = document.querySelector("#closeWindow");
 const $minimizeWindowBtn = document.querySelector("#minimizeWindow");
+const $maximizeWindowBtn = document.querySelector("#maximizeWindow");

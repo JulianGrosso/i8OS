@@ -743,6 +743,22 @@ input[type="range"]::-ms-track {
   }
 }
 
+.maximize {
+  height: 100vh !important;
+  width: 100vw !important;
+  top: 0rem !important;
+  left: 0vw !important;
+}
+
+@media screen and (max-width: 425px) {
+  .maximize {
+    height: 100vh !important;
+    width: 100vw !important;
+    top: 0rem !important;
+    left: 0vw !important;
+  }
+}
+
 .w-bar {
   width: 100%;
   height: 2.2rem;

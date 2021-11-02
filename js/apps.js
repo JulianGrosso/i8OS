@@ -129,6 +129,14 @@ function closeApp() {
 	appOpenNow = "";
 }
 
+function normalSizeWindowApp() {
+	$appWindow.classList.toggle("maximize");
+
+	windowState = "open";
+
+	closeNotifMenu();
+}
+
 function minimizeWindowApp() {
 	$appWindow.classList.remove("a03");
 	setTimeout(() => {
@@ -136,6 +144,14 @@ function minimizeWindowApp() {
 	}, 400);
 
 	windowState = "minimize";
+
+	closeNotifMenu();
+}
+
+function maximizeWindowApp() {
+	$appWindow.classList.toggle("maximize");
+
+	windowState = "openMax";
 
 	closeNotifMenu();
 }
@@ -179,7 +195,7 @@ function removeTitleWindow() {
 // App Windows - Event Listener
 
 $closeWindowBtn.addEventListener("click", () => {
-	if (windowState === "open") {
+	if (windowState === "open" || windowState === "openMax") {
 		closeApp();
 		closeAppTaskbarIcon();
 
@@ -188,8 +204,16 @@ $closeWindowBtn.addEventListener("click", () => {
 });
 
 $minimizeWindowBtn.addEventListener("click", () => {
-	if (windowState === "open") {
+	if (windowState === "open" || windowState === "openMax") {
 		minimizeWindowApp();
+	}
+});
+
+$maximizeWindowBtn.addEventListener("click", () => {
+	if (windowState === "open") {
+		maximizeWindowApp();
+	} else if (windowState === "openMax") {
+		normalSizeWindowApp();
 	}
 });
 

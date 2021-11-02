@@ -25,7 +25,7 @@ $notifArea.addEventListener("click", () => {
 $startBtn.addEventListener("click", () => {
 	closeNotifMenu();
 
-	if (windowState === "open") {
+	if (windowState === "open" || windowState === "openMax") {
 		minimizeWindowApp();
 
 		windowState = "minimize";
@@ -33,7 +33,7 @@ $startBtn.addEventListener("click", () => {
 });
 
 $appTaskbarIcon.addEventListener("click", () => {
-	if (windowState === "open") {
+	if (windowState === "open" || windowState === "openMax") {
 		minimizeWindowApp();
 
 		windowState = "minimize";
