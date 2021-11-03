@@ -37,6 +37,13 @@ const app05 = {
 	iconImg: "./assets/img/user_i8OS.jpg",
 };
 
+const app06 = {
+	name: "Password Safe",
+	code: '<iframe src="https://juliangrosso.github.io/PasswordSafe/" class="app-iframe" id="appIframe"></iframe>',
+	id: "app06",
+	iconImg: "./assets/img/user_i8OS.jpg",
+};
+
 //----------------------------------------------------------------------------
 
 // Create App Icons
@@ -57,6 +64,7 @@ function createAppIcon(app) {
 	$iconsContainer.appendChild(appIcon);
 }
 
+createAppIcon(app06);
 createAppIcon(app01);
 createAppIcon(app02);
 createAppIcon(app03);
@@ -85,6 +93,8 @@ function startApp(iconId) {
 		appCode = app04.code;
 	} else if (iconId === "app05") {
 		appCode = app05.code;
+	} else if (iconId === "app06") {
+		appCode = app06.code;
 	} else {
 		return;
 	}

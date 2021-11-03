@@ -19,6 +19,25 @@ body {
   background-color: black;
   font-family: "Roboto", sans-serif;
   color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    min-height: -webkit-fill-available;
+    height: 91.95vh;
+  }
 }
 
 .desktop-all {
@@ -45,6 +64,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 100% !important;
   }
 }
 
@@ -172,6 +192,7 @@ body {
 }
 
 .login-screen {
+  position: absolute;
   height: 100vh;
   width: 100vw;
   background-color: #0e0e10;
@@ -267,9 +288,7 @@ body {
 
 @media screen and (max-width: 425px) {
   .taskbar {
-    height: 3.4rem;
-    position: absolute;
-    bottom: 0vh;
+    height: 3.6rem;
   }
 }
 
@@ -652,6 +671,7 @@ input[type="range"]::-ms-track {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: absolute;
   width: 45vw;
   max-height: 80vh;
   margin-top: 12rem;
@@ -744,16 +764,18 @@ input[type="range"]::-ms-track {
 }
 
 .maximize {
-  height: 100vh !important;
-  width: 100vw !important;
+  height: 100% !important;
+  width: 100% !important;
+  position: inherit !important;
   top: 0rem !important;
   left: 0vw !important;
 }
 
 @media screen and (max-width: 425px) {
   .maximize {
-    height: 100vh !important;
-    width: 100vw !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: inherit !important;
     top: 0rem !important;
     left: 0vw !important;
   }

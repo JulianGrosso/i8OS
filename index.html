@@ -54,45 +54,41 @@
 				</div>
 				<div class="app-container" id="appContainer"></div>
 			</div>
+		</section>
 
-			<div class="taskbar a04-base unselect" id="taskbar">
+		<section class="taskbar a04-base unselect" id="taskbar">
+			<img
+				class="start-btn"
+				id="startBtn"
+				src="./assets/icons/desktop_button.png"
+				alt="Desktop button"
+			/>
+			<div class="taskbar-icon">
 				<img
-					class="start-btn"
-					id="startBtn"
-					src="./assets/icons/desktop_button.png"
-					alt="Desktop button"
+					class="app-taskbar-icon a03-base hidden"
+					id="appTaskbarIcon"
+					src="./assets/icons/App01_icon_taskbar.png"
+					alt="App icon"
 				/>
-				<div class="taskbar-icon">
-					<img
-						class="app-taskbar-icon a03-base hidden"
-						id="appTaskbarIcon"
-						src="./assets/icons/App01_icon_taskbar.png"
-						alt="App icon"
-					/>
-				</div>
-				<div class="notification-area" id="notifArea">
-					<img
-						class="wifi-taskbar"
-						src="./assets/icons/wifi-full.png"
-						alt="Wifi full"
-					/>
-					<img
-						class="volume-taskbar"
-						src="./assets/icons/volume-full.png"
-						alt="Volume full"
-					/>
-					<img
-						class="battery-taskbar"
-						src="./assets/icons/battery-charging.png"
-						alt="Battery charging"
-					/>
-					<img class="menu-taskbar" src="./assets/icons/menu.png" alt="Menu" />
-					<div
-						class="clock-taskbar"
-						id="clockTaskbar"
-						onload="showTime()"
-					></div>
-				</div>
+			</div>
+			<div class="notification-area" id="notifArea">
+				<img
+					class="wifi-taskbar"
+					src="./assets/icons/wifi-full.png"
+					alt="Wifi full"
+				/>
+				<img
+					class="volume-taskbar"
+					src="./assets/icons/volume-full.png"
+					alt="Volume full"
+				/>
+				<img
+					class="battery-taskbar"
+					src="./assets/icons/battery-charging.png"
+					alt="Battery charging"
+				/>
+				<img class="menu-taskbar" src="./assets/icons/menu.png" alt="Menu" />
+				<div class="clock-taskbar" id="clockTaskbar" onload="showTime()"></div>
 			</div>
 		</section>
 

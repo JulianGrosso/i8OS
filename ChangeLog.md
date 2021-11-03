@@ -1,4 +1,5 @@
 ## Version 1.0
+
 - Login and discover the apps.
 - Choose your favorite wallpaper for the experience in the notification menu.
 
@@ -9,3 +10,4 @@
 - Changes in the icon layout.
 - Changes in UI.
 - Added the maximization function to apps windows.
+- Added Password Safe app.

@@ -23,16 +23,18 @@
 }
 
 .maximize {
-	height: 100vh !important;
-	width: 100vw !important;
+	height: 100% !important;
+	width: 100% !important;
 
+	position: inherit !important;
 	top: 0rem !important;
 	left: 0vw !important;
 
 	@media screen and (max-width: $littlescreen) {
-		height: 100vh !important;
-		width: 100vw !important;
+		height: 100% !important;
+		width: 100% !important;
 
+		position: inherit !important;
 		top: 0rem !important;
 		left: 0vw !important;
 	}

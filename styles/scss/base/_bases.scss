@@ -13,6 +13,16 @@ body {
 
 	font-family: "Roboto", sans-serif;
 	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+
+	@media screen and (max-width: $littlescreen) {
+		min-height: -webkit-fill-available;
+		height: 91.95vh;
+	}
 }
 
 .desktop-all {
@@ -28,6 +38,7 @@ body {
 
 	@media screen and (max-width: $littlescreen) {
 		justify-content: center;
+		height: 100% !important;
 	}
 }
 
