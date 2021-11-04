@@ -10,4 +10,4 @@
 - Changes in the icon layout.
 - Changes in UI.
 - Added the maximization function to apps windows.
-- Added Password Safe app.
+- Added Password Safe app and two Frontend Mentor Challenge.

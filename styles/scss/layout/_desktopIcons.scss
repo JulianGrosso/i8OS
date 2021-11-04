@@ -23,15 +23,16 @@
 //------------------------------------------------------
 
 .app-desktop-icon {
-	margin-top: 1rem;
-	margin-bottom: 0.5rem;
-	margin-left: 0.5rem;
-	margin-right: 0.5rem;
+	margin: 1.5rem;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	@media screen and (max-width: $littlescreen) {
+		margin: 0.5rem;
+	}
 }
 
 .app-desktop-icon-img {

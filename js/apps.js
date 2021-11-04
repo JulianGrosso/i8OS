@@ -6,42 +6,56 @@ const app01 = {
 	name: "Dancing Structures I",
 	code: '<iframe src="./i8applications/01 Infinite8_i8c003o001/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app01",
-	iconImg: "./assets/img/user_i8OS.jpg",
+	iconImg: "./assets/img/ico_i8OS-Default.jpg",
 };
 
 const app02 = {
 	name: "Dancing Structures II",
 	code: '<iframe src="./i8applications/02 Infinite8_i8c003o002/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app02",
-	iconImg: "./assets/img/user_i8OS.jpg",
+	iconImg: "./assets/img/ico_i8OS-Default.jpg",
 };
 
 const app03 = {
 	name: "Dancing Structures III",
 	code: '<iframe src="./i8applications/03 Infinite8_i8c003o003/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app03",
-	iconImg: "./assets/img/user_i8OS.jpg",
+	iconImg: "./assets/img/ico_i8OS-Default.jpg",
 };
 
 const app04 = {
 	name: "Dancing Structures IV",
 	code: '<iframe src="./i8applications/04 Infinite8_i8c003o004/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app04",
-	iconImg: "./assets/img/user_i8OS.jpg",
+	iconImg: "./assets/img/ico_i8OS-Default.jpg",
 };
 
 const app05 = {
 	name: "Dancing Structures V",
 	code: '<iframe src="./i8applications/05 Infinite8_i8c003o005/index.html" class="app-iframe" id="appIframe"></iframe>',
 	id: "app05",
-	iconImg: "./assets/img/user_i8OS.jpg",
+	iconImg: "./assets/img/ico_i8OS-Default.jpg",
 };
 
 const app06 = {
 	name: "Password Safe",
 	code: '<iframe src="https://juliangrosso.github.io/PasswordSafe/" class="app-iframe" id="appIframe"></iframe>',
 	id: "app06",
-	iconImg: "./assets/img/user_i8OS.jpg",
+	iconImg: "./assets/img/ico_PasswordSafe.png",
+};
+
+const app07 = {
+	name: "Frontend Mentor Challenge #1",
+	code: '<iframe src="https://juliangrosso.github.io/FrontendMentor-SPF/" class="app-iframe" id="appIframe"></iframe>',
+	id: "app07",
+	iconImg: "./assets/img/ico_FM.png",
+};
+
+const app08 = {
+	name: "Frontend Mentor Challenge #2",
+	code: '<iframe src="https://juliangrosso.github.io/FrontendMentor-Profile-Card/" class="app-iframe" id="appIframe"></iframe>',
+	id: "app08",
+	iconImg: "./assets/img/ico_FM.png",
 };
 
 //----------------------------------------------------------------------------
@@ -65,6 +79,8 @@ function createAppIcon(app) {
 }
 
 createAppIcon(app06);
+createAppIcon(app07);
+createAppIcon(app08);
 createAppIcon(app01);
 createAppIcon(app02);
 createAppIcon(app03);
@@ -95,6 +111,10 @@ function startApp(iconId) {
 		appCode = app05.code;
 	} else if (iconId === "app06") {
 		appCode = app06.code;
+	} else if (iconId === "app07") {
+		appCode = app07.code;
+	} else if (iconId === "app08") {
+		appCode = app08.code;
 	} else {
 		return;
 	}
