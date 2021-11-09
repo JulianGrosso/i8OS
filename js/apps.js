@@ -58,6 +58,20 @@ const app08 = {
 	iconImg: "./assets/img/ico_FM.png",
 };
 
+const app09 = {
+	name: "SpaceX History React#1",
+	code: '<iframe src="https://space-x-history-react01-jg.netlify.app/" class="app-iframe" id="appIframe"></iframe>',
+	id: "app09",
+	iconImg: "./assets/img/ico_React.png",
+};
+
+const app10 = {
+	name: "Travel Agency Web React#2",
+	code: '<iframe src="https://travel-agency-web-react02-jg.netlify.app/" class="app-iframe" id="appIframe"></iframe>',
+	id: "app10",
+	iconImg: "./assets/img/ico_React.png",
+};
+
 //----------------------------------------------------------------------------
 
 // Create App Icons
@@ -79,13 +93,15 @@ function createAppIcon(app) {
 }
 
 createAppIcon(app06);
+createAppIcon(app09);
+createAppIcon(app10);
 createAppIcon(app07);
 createAppIcon(app08);
 createAppIcon(app01);
 createAppIcon(app02);
 createAppIcon(app03);
 createAppIcon(app04);
-createAppIcon(app05);
+// createAppIcon(app05);
 
 //----------------------------------------------------------------------------
 
@@ -115,6 +131,10 @@ function startApp(iconId) {
 		appCode = app07.code;
 	} else if (iconId === "app08") {
 		appCode = app08.code;
+	} else if (iconId === "app09") {
+		appCode = app09.code;
+	} else if (iconId === "app10") {
+		appCode = app10.code;
 	} else {
 		return;
 	}

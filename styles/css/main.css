@@ -672,16 +672,17 @@ input[type="range"]::-ms-track {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  width: 45vw;
+  top: 15%;
+  width: 50vw;
   max-height: 80vh;
-  margin-top: 12rem;
   z-index: 3;
 }
 
 @media screen and (max-width: 425px) {
   .icons-container {
     width: 98vw;
-    margin-top: -4rem;
+    max-height: 90vh;
+    top: 10%;
   }
 }
 
@@ -694,12 +695,13 @@ input[type="range"]::-ms-track {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 140px;
 }
 
 @media screen and (max-width: 425px) {

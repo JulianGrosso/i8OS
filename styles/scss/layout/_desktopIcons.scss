@@ -8,15 +8,16 @@
 	align-items: center;
 
 	position: absolute;
-	width: 45vw;
+	top: 15%;
+	width: 50vw;
 	max-height: 80vh;
-	margin-top: 12rem;
 
 	z-index: 3;
 
 	@media screen and (max-width: $littlescreen) {
 		width: 98vw;
-		margin-top: -4rem;
+		max-height: 90vh;
+		top: 10%;
 	}
 }
 
@@ -27,8 +28,9 @@
 
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	height: 140px;
 
 	@media screen and (max-width: $littlescreen) {
 		margin: 0.5rem;

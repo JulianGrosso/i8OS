@@ -11,3 +11,4 @@
 - Changes in UI.
 - Added the maximization function to apps windows.
 - Added Password Safe app and two Frontend Mentor Challenge.
+- Added two ReactJS Proyect: SpaceX History, Travel Agency Web.
