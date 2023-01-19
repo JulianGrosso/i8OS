@@ -21,7 +21,7 @@ body {
 
 	@media screen and (max-width: $littlescreen) {
 		min-height: -webkit-fill-available;
-		height: 91.95vh;
+		height: 100vh;
 	}
 }
 
@@ -33,7 +33,7 @@ body {
 
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 
 	@media screen and (max-width: $littlescreen) {
@@ -64,28 +64,28 @@ body {
 // Wallpapers
 
 .wallpaper01 {
-	background-image: url("../../assets/img/W-08.jpg");
+	background-image: url("../../assets/img/W-05.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .wallpaper02 {
-	background-image: url("../../assets/img/W-01.jpg");
+	background-image: url("../../assets/img/W-08.jpg");
 	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .wallpaper03 {
-	background-image: url("../../assets/img/W-06.jpg");
+	background-image: url("../../assets/img/W-01.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .wallpaper04 {
-	background-image: url("../../assets/img/W-05.jpg");
+	background-image: url("../../assets/img/W-06.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;

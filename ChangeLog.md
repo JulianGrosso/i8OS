@@ -12,3 +12,8 @@
 - Added the maximization function to apps windows.
 - Added Password Safe app and two Frontend Mentor Challenge.
 - Added two ReactJS Proyect: SpaceX History, Travel Agency Web.
+
+## Version 1.2
+
+- Bug fixes and incompatibilities with new versions of web browsers.
+- Changes and updates in UI.

@@ -1,4 +1,4 @@
-// i8 OS v 1.1
+// i8 OS v 1.2
 
 // DOM elements - Audios
 

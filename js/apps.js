@@ -1,4 +1,4 @@
-// i8 OS v 1.1
+// i8 OS v 1.2
 
 // Apps Code
 
@@ -92,16 +92,16 @@ function createAppIcon(app) {
 	$iconsContainer.appendChild(appIcon);
 }
 
-createAppIcon(app06);
-createAppIcon(app09);
-createAppIcon(app10);
-createAppIcon(app07);
-createAppIcon(app08);
+// createAppIcon(app06);
+// createAppIcon(app09);
+// createAppIcon(app10);
+// createAppIcon(app07);
+// createAppIcon(app08);
 createAppIcon(app01);
 createAppIcon(app02);
 createAppIcon(app03);
 createAppIcon(app04);
-// createAppIcon(app05);
+createAppIcon(app05);
 
 //----------------------------------------------------------------------------
 
@@ -270,7 +270,8 @@ $maximizeWindowBtn.addEventListener("click", () => {
 // App Icons - Event Listener
 
 $iconsContainer.addEventListener("click", (e) => {
-	let iconId = e.path[1].id;
+	let path = e.path || (e.composedPath && e.composedPath());
+	let iconId = path[1].id;
 
 	if (windowState === "close") {
 		startApp(iconId);
@@ -280,7 +281,8 @@ $iconsContainer.addEventListener("click", (e) => {
 });
 
 $iconsContainer.addEventListener("touchstart", (e) => {
-	let iconId = e.path[1].id;
+	let path = e.path || (e.composedPath && e.composedPath());
+	let iconId = path[1].id;
 
 	if (windowState === "close") {
 		startApp(iconId);
